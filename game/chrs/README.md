@@ -11,3 +11,6 @@ Sayori's character file. Technically just Sayo-nara's OGG file.
 
 ## yuri.chr
 Yuri's character file. Technically just a poem in a text file.
+
+## gwynn.chr
+A self-diagnostic file. Technically just a conversation in a text file.
