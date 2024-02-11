@@ -4,9 +4,9 @@ label ch0_main:
     scene bg corridor
     with dissolve_scene_full
 
-$ s_name = "Sayori"
-
+    $ s_name = "Sayori"
     play music t3
+
     "...What?"
     "Why am I here?"
     d "I'm sorry I had to put you in this situation, [player]."
