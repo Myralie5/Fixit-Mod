@@ -1,5 +1,4 @@
 
-
 label ch2_main:
     scene bg club_day
     with dissolve_scene_half

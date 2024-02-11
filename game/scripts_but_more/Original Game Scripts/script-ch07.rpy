@@ -1,4 +1,4 @@
-label ch20_from_ch10:
+label ch7_main:
     scene bg residential_day
     with dissolve_scene_half
     play music t2

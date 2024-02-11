@@ -1,12 +1,5 @@
-image yuri half = "images/yuri/1l.png"
-image yuri_half2:
-    "images/yuri/1r.png"
-    block:
-        xoffset -360
-        linear 0.2 xoffset -280
-        repeat
 
-label ch22_main:
+label ch9_main:
     scene bg club_day2
     with dissolve_scene_half
     play music t6

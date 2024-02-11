@@ -1,4 +1,4 @@
-label ch21_main:
+label ch8_main:
     scene bg club_day2
     with dissolve_scene_half
     play music t2g3

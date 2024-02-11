@@ -150,7 +150,7 @@ label ch30_noskip:
 
 image splash-glitch2 = "images/bg/splash-glitch2.png"
 
-label ch30_main:
+label ch11_main:
     $ persistent.autoload = "ch30_main"
     $ config.allow_skipping = False
     $ persistent.monikatopics = []
