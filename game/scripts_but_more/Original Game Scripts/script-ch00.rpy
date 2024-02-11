@@ -80,4 +80,5 @@ label ch0_main:
     s 1r "If we share it after."
     y 3n "Sh-share?!?"
     "Seems this Yuri's rather self-concious."
-    s "Sorry, that's the end of the play test. Please close your game."
+    s 1c "Don't worry, this is a strict no-judgement zone."
+    "Playtest end here."
