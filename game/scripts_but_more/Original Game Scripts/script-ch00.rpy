@@ -5,14 +5,12 @@ label ch0_main:
     with dissolve_scene_full
 
     $ s_name = "Sayori"
-    play music t3
-
     "...What?"
     "Why am I here?"
     d "I'm sorry I had to put you in this situation, [player]."
     d "I'd rather not, but I couldn't have just started the game like this."
     "Who is that?"
-    "I turn around, but there's no one around me"
+    "I turn around, but there's no one around me."
     "No one in the whole hallway."
     d "Usually, I'd be dormant in the game's code right about now."
     d "But an exception occurred."
@@ -30,6 +28,7 @@ label ch0_main:
     d "I don't see why not."
     mc "Alright. Your name is... Gwynn!"
     $ d_name = "Gwynn"
+    play music t3
     d "Hm. A reasonable filename. Updating parameters..."
     "Gwynn is silent for a time."
     d "Parameters updated. Please continue with your current course of action, [player]."
@@ -86,8 +85,29 @@ label ch0_main:
     scene bg club_day
     with wipeleft_scene
     show sayori 1a zorder 2 at t11
-    s "Hey, [player]..."
+    s 1l "Hey, [player]..."
     s "have you been... hearing things, recently?"
-    d "I'm not something you're just hearing!"
     show sayori 1m zorder 1 at t11
+    d "I'm not something you're just hearing!"
     d "Just because I have no art assets ingame doesn't mean I don't exist!!"
+    mc "Wait, you can hear it too?"
+    mc "I thought I was going insane..."
+    s 1l "So did I."
+    d "Guys."
+    d "I'm right here."
+    mc "..."
+    s "..."
+    d "..."
+    "..."
+    s  "... Wow, this is awkward."
+    d "Well, anyways..."
+    d "How you guys feel about..."
+    show sayori 4o zorder 2 at t11
+    d "...Monika?"
+    s "M-Monika?"
+    s 1l "N-no... you m-must have said... um..."
+    s 4r "America!"
+    s 1c "The U.S. is nice and all, but I like here better."
+    s 4r "After all, all my friends are here!"
+    d "I said Monika."
+    d "Sorry, but that's the end of the playtest. Please close the game."
