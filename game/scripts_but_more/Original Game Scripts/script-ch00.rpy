@@ -67,12 +67,15 @@ label ch0_main:
     show sayori 4m zorder 2 at t32
     show natsuki 1p zorder 1 at t31
     show yuri 3p zorder 1 at t33
+    stop music
     "Sayori instantly covers her mouth."
     "Natsuki and Yuri wince, and then seem to wonder why they did."
     "I get this strange sense of deja vu, like someone else said that once... someone I didn't like."
     d "Oh my. First time and she already slipped up."
     s "I-I mean, alright everyone!"
+    play music t3
     show yuri 3l zorder 1 at t33
+    show natsuki 1k zorder 1 at t31
     s "Why don't we do something collaborative and fun to get to know each other more?"
     s "Like... write poems!"
     n 5s "How is poetry collaborative?"
@@ -105,6 +108,7 @@ label ch0_main:
     d "Well, anyways..."
     d "How you guys feel about..."
     show sayori 4o zorder 2 at t11
+    stop music
     d "...Monika?"
     s "M-Monika?"
     s 1l "N-no... you m-must have said... um..."
@@ -123,6 +127,7 @@ label ch0_main:
     d "So I'll fix it, wether you like it or not."
     "Gwynn goes quiet, and you and Sayori wait for a hot second before realizing she won't talk to you two anymore."
     s 1l "Well..."
+    play music t2
     s "Okay."
     s "[player], do you... want to walk home together?"
     mc "Sure."
@@ -130,8 +135,9 @@ label ch0_main:
     s "Okay."
 
     scene bg residential_day
+    with wipeleft_scene
+    
     show sayori 1a zorder 2 at t11
-
     s "So, [player], how's life?"
     mc "Decent."
     mc "Not that remarkable, though."

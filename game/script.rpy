@@ -23,9 +23,9 @@ label start:
     #   $ mi_name = "Mike". 
     # Don't forget to add the character to 'definitions.rpy'!
     $ s_name = "???"
-    $ m_name = "Girl 3"
-    $ n_name = "Girl 2"
-    $ y_name = "Girl 1"
+    $ m_name = "???"
+    $ n_name = "Girl 1"
+    $ y_name = "Girl 2"
     $ d_name = "Girl's Voice"
 
     # This variable controls whether the quick menu in the textbox is enabled.
