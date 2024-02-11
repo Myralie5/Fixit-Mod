@@ -61,7 +61,7 @@ label start:
 
     #     ## Day 1
         $ chapter = 1
-        call ch1_main
+        call ch01_main
 
     #     # This call statement calls the poem sharing minigame to be played.
         call poemresponse_start
