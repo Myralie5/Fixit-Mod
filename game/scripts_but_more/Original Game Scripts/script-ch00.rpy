@@ -84,6 +84,8 @@ label ch0_main:
     s "Well, everyone, I think this meeting's over. Don't forget to write a poem tonight!"
     "Natsuki and Yuri leave the club."
     play music t2
+    hide yuri 4b zorder 1 at t33
+    hide natsuki 5s zorder 1 at t31
     show sayori 1a zorder 2 at t11
     s 1l "Hey, [player]..."
     s "Have you been... hearing things, recently?"
