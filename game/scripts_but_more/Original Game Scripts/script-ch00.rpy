@@ -1,5 +1,5 @@
 
-label ch0_main:
+label ch00_main:
     stop music fadeout 2.0
     scene bg corridor
     with dissolve_scene_full

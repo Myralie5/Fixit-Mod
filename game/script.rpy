@@ -54,7 +54,7 @@ label start:
         $ chapter = 0
 
     #     # This call statement calls your script label to be played.
-        call ch0_main
+        call ch00_main
         
     #     # This call statement calls the poem mini-game to be played.
         call poem
@@ -73,7 +73,7 @@ label start:
         $ chapter = 2
         call ch2_main
         call poemresponse_start
-        call ch2_end
+        call ch02_end
 
         call poem
 
