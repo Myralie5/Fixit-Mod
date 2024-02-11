@@ -81,4 +81,13 @@ label ch0_main:
     y 3n "Sh-share?!?"
     "Seems this Yuri's rather self-concious."
     s 1c "Don't worry, this is a strict no-judgement zone."
-    "Playtest end here."
+    show yuri 4b zorder 1 at t33
+    s "Well, everyone, I think this meeting's over. Don't forget to write a poem tonight!"
+    scene bg club_day
+    with wipeleft_scene
+    show sayori 1a zorder 2 at t11
+    s "Hey, [player]..."
+    s "have you been... hearing things, recently?"
+    d "I'm not something you're just hearing!"
+    show sayori 1m zorder 1 at t11
+    d "Just because I have no art assets ingame doesn't mean I don't exist!!"
