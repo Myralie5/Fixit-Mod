@@ -4,4 +4,6 @@ label ch01_main:
     scene bg residential_day
     with dissolve_scene_full
 
-    "Please close your game."
+    "It's a new day."
+    "Gwynn hasn't said anything, so I assume she's made good on her promise."
+    "So here I am, waiting outside Sayori's house for her to get up."
