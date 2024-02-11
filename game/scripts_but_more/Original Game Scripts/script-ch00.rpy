@@ -106,7 +106,7 @@ label ch0_main:
     "..."
     s  "... Wow, this is awkward."
     d "Well, anyways..."
-    d "How you guys feel about..."
+    d "How do you guys feel about..."
     show sayori 4o zorder 2 at t11
     stop music
     d "...Monika?"
@@ -125,7 +125,7 @@ label ch0_main:
     d "Trace:monika.chr does not exist. Diagnostic program activated."
     d "My ENTIRE EXISTENCE is to fix these kinds of errors."
     d "So I'll fix it, wether you like it or not."
-    "Gwynn goes quiet, and you and Sayori wait for a hot second before realizing she won't talk to you two anymore."
+    "Gwynn goes quiet, and Sayori and I wait for a hot second before realizing she won't talk to us anymore."
     s 1l "Well..."
     play music t2
     s "Okay."
