@@ -60,7 +60,7 @@ label ch0_main:
     y "Is he... a new member?"
     show yuri 3e zorder 1 at t33
     mc "I-I just got lost, I swear!"
-    mc "Is this your club, Sayori?"
+    mc "Is this your club, Sayo?"
     show sayori 4r zorder 2 at f32
     s "Yeah!"
     s 1a "It's the Literature club."
@@ -178,13 +178,13 @@ label ch0_main:
     d "Trace:monika.chr does not exist. Diagnostic program activated."
     d "My ENTIRE EXISTENCE is to fix these kinds of errors."
     d "So I'll fix it, whether you like it or not."
-    "Gwynn goes quiet, and Sayori and I wait for a hot second before realizing she won't talk to us anymore."
+    "Gwynn goes quiet, and Sayo and I wait for a hot second before realizing she won't talk to us anymore."
     show sayori 1l zorder 2 at t11
     s "Well..."
     play music t2
     s "[player], do you... want to walk home together?"
     mc "Sure."
-    "Me and Sayori haven't walked home together in a while, not since last year."
+    "Me and Sayo haven't walked home together in a while, not since last year."
     s "Okay."
 
     scene bg residential_day
@@ -199,7 +199,7 @@ label ch0_main:
     s "Remarkable days can be bad, even though the word has good connotation."
     show sayori 1c zorder 1 at t11
     mc "Hm."
-    mc "Actually, Sayori, I was wondering..."
+    mc "Actually, Sayo, I was wondering..."
     mc "What did Gwynn mean by 'the game'?"
     mc "Even when she was talking to me, she called me an 'algorithm'."
     show sayori 1l zorder 2 at t11
@@ -229,13 +229,13 @@ label ch0_main:
     s "... No."
     s 1i "You DIDN'T."
     d "I did."
-    mc "Um, Sayori, remind me why 'Monika' is bad?"
+    mc "Um, Sayo, remind me why 'Monika' is bad?"
     s "She just is."
     d "It's okay if you don't understand, [player]."
     d "It's not like you're really supposed to."
     d "I'll leave you two be."
     d "I'll be gone and everything will be solved by tommorrow."
-    pause 1.0
+    pause 1.5
     "Well, that happened."
     mc "..."
     s "..."
@@ -244,6 +244,6 @@ label ch0_main:
     s "I'll solve it."
     show sayori 1i at thide
     hide sayori
-    pause 2.0
+    pause 3.0
     "Huh."
     "Guess I'll just go... write poetry now."
