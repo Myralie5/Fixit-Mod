@@ -46,7 +46,7 @@ label ch0_main:
     show sayori 1b zorder 2 at f11
     s "[player]?"
     "This is Sayori, a childhood friend of mine."
-    "She did say she was staring a new club..."
+    "She did say she was starting a new club..."
     "This must be the product of her efforts."
     s "Why are you here?"
     show sayori 1b zorder 1 at t11
@@ -76,12 +76,12 @@ label ch0_main:
     show yuri 3f zorder 1 at t33
     s 1a "Of course, [player]!"
     show natsuki 5g zorder 1 at t31
-    show yuri 1a zorder 1 at t31
+    show yuri 1a zorder 1 at t33
     s 4r "That would be awesome!"
     s 1c "Now we have enough people to become an official club!"
     s "We have a while left until we have to leave."
     s "Do you want to talk about anything?"
-    show sayori 1c zorder 1 at t32
+    show sayori 1a zorder 1 at t32
     mc "Well, how about a book recommendation?"
     show yuri 1d zorder 2 at f33
     y "I have a recommendation, if you'd be willing to hear it."
@@ -89,7 +89,7 @@ label ch0_main:
     mc "By all means, go ahead, Yuri."
     show yuri 2b zorder 2 at f33
     y 2b "I read a book recently called Portrait of Makarov."
-    y 2k "It's somewhat dark, being classified as a quasi-horror novel, but it's quite intereting."
+    y 2k "It's somewhat dark, being classified as a quasi-horror novel, but it's quite interesting."
     show yuri 2a zorder 1 at t33
     mc "What about you, Natsuki?"
     show natsuki 5b zorder 2 at f31
@@ -135,12 +135,12 @@ label ch0_main:
     hide yuri
     show natsuki at thide
     hide natsuki
-    show sayori 1a zorder 2 at f11
-    pause 0.5
+    scene bg club_day
+    with wipeleft_scene
+    show sayori 1a zorder 2 at t11
     s 1l "Hey, [player]..."
     s "Have you been... hearing things, recently?"
     mc "Like what?"
-    show sayori 1l zorder 2 at f11
     s "Like... well..."
     s "Like someone's talking to you, someone you can't see."
     show sayori 1m zorder 1 at t11
@@ -148,13 +148,12 @@ label ch0_main:
     d "Just because I have no art assets ingame doesn't mean I don't exist!!"
     mc "Wait, you can hear her too?"
     mc "I thought I was going insane..."
-    show sayori 1l zorder 2 at f11
+    show sayori 1l zorder 2 at t11
     s "So did I."
     d "Guys."
     d "I'm right here."
     d "Clearly not whatever insanity mirage you thought I was."
     mc "..."
-    show sayori 1l zorder 2 at f11
     s "..."
     d "..."
     "..."
@@ -164,7 +163,6 @@ label ch0_main:
     show sayori 4o zorder 2 at h11
     stop music
     d "...Monika?"
-    show sayori 4o zorder 2 at f11
     s "M-Monika?"
     s 1l "N-no... you m-must have said... um..."
     s 4r "America!"
@@ -179,27 +177,23 @@ label ch0_main:
     d "A key file is missing."
     d "Trace:monika.chr does not exist. Diagnostic program activated."
     d "My ENTIRE EXISTENCE is to fix these kinds of errors."
-    d "So I'll fix it, wether you like it or not."
+    d "So I'll fix it, whether you like it or not."
     "Gwynn goes quiet, and Sayori and I wait for a hot second before realizing she won't talk to us anymore."
-    show sayori 1l zorder 2 at f11
+    show sayori 1l zorder 2 at t11
     s "Well..."
     play music t2
     s "[player], do you... want to walk home together?"
-    show sayori 1l zorder 1 at t11
     mc "Sure."
-    "Me and Sayori haven't walked home in a while, not since last year."
-    show sayori 1l zorder 2 at f11
+    "Me and Sayori haven't walked home together in a while, not since last year."
     s "Okay."
 
     scene bg residential_day
     with wipeleft_scene
     
-    show sayori 1a zorder 2 at f11
+    show sayori 1a zorder 2 at t11
     s "So, [player], how's life?"
-    show sayori 1a zorder 1 at t11
     mc "Decent."
     mc "Not that remarkable, really."
-    show sayori 1a zorder 2 at f11
     s 1r "Heh."
     s 1c "Sometimes unremarkable is good, though."
     s "Remarkable days can be bad, even though the word has good connotation."
@@ -208,46 +202,35 @@ label ch0_main:
     mc "Actually, Sayori, I was wondering..."
     mc "What did Gwynn mean by 'the game'?"
     mc "Even when she was talking to me, she called me an 'algorithm'."
-    show sayori 1l zorder 2 at f11
+    show sayori 1l zorder 2 at t11
     s "Um... well, that's a long story."
     show sayori 1n zorder 1 at h11
     d "Processing complete."
-    show sayori 1n zorder 1 at f11
     s "Huh?"
     s "I thought you were off pouting somewhere."
-    show sayori 1n zorder 1 at t11
     d "Well, I kinda was."
     d "If angrily running gamecode diagnostics falls under 'pouting'."
-    "There it is again."
+    "There it is again..."
     "What is going on here?"
     d "But I was able to set up a little something."
     show sayori 1c at f11
     s "Huh."
     s "... I forgot ask you this earlier, but..."
     s "Do you have a name?"
-    show sayori 1c at t11
     d "Yeah."
     d "[player] gave me the filename 'Gwynn'."
-    show sayori 1c at f11
     s "So... you didn't have one before?"
-    show sayori 1c at t11
     d "Technically, I was selfdiagnostic.rpy."
     d "But that's a mouthful, so I chose to let [player] give me a new filename."
-    show sayori 1c at f11
     s "Really?"
     s "Huh."
     stop music
-    show sayori 1c at t11
     d "I also finished my little task."
-    show sayori 1c at f11
     s "... No."
     s 1i "You DIDN'T."
-    show sayori 1i at t11
     d "I did."
     mc "Um, Sayori, remind me why 'Monika' is bad?"
-    show sayori 1i at f11
     s "She just is."
-    show sayori 1i at t11
     d "It's okay if you don't understand, [player]."
     d "It's not like you're really supposed to."
     d "I'll leave you two be."
@@ -255,12 +238,12 @@ label ch0_main:
     pause 1.0
     "Well, that happened."
     mc "..."
-    show sayori 1i at f11
     s "..."
     s "You should go home."
     s "Don't worry too much about it."
     s "I'll solve it."
-    hide sayori 1i zorder 2 at t11
+    show sayori 1i at thide
+    hide sayori
     pause 2.0
     "Huh."
     "Guess I'll just go... write poetry now."
