@@ -65,7 +65,7 @@ label start:
 
     #     # This call statement calls the poem sharing minigame to be played.
         call poemresponse_start
-        call ch1_end
+        call ch01_end
 
         call poem
 
@@ -73,7 +73,7 @@ label start:
         $ chapter = 2
         call ch2_main
         call poemresponse_start
-        call ch02_end
+        call ch2_end
 
         call poem
 
@@ -125,12 +125,12 @@ label start:
         jump credits
 
 # This label is where the game 'ends' during Act 1.
-label endgame(pause_length=4.0):
-    $ quick_menu = False
-    stop music fadeout 2.0
-    scene black
-    show end
-    with dissolve_scene_full
-    pause pause_length
-    $ quick_menu = True
-    return
+#label endgame(pause_length=4.0):
+    #$ quick_menu = False
+    #stop music fadeout 2.0
+    #scene black
+    #show end
+    #with dissolve_scene_full
+    #pause pause_length
+    #$ quick_menu = True
+    #return

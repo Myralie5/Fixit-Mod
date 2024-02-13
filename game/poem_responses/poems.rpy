@@ -26,6 +26,7 @@ init 1 python:
     author_m = Author("monika", music=audio.tmonika)
     author_n = Author("natsuki", music=audio.tnatsuki)
     author_y = Author("yuri", music=audio.tyuri)
+    author_d = Author("gwynn", music=None)
 
     class Poem(renpy.text.text.Text):
         """
@@ -278,74 +279,6 @@ Understanding is overrated.
 I touch his hand. The flickering stops.
 Ghosts are blue-green. My heart is amber."""))
 
-    poem_y22 = Poem(
-        author_y, title=_("Wheel"),
-        text=_("""\
-A rotating wheel. Turning an axle. Grinding. Bolthead. Linear gearbox. Falling sky. Seven holy stakes. \
-A docked ship. A portal to another world. A thin rope tied to a thick rope. A torn harness. Parabolic gearbox. \
-Expanding universe. Time controlled by slipping cogwheels. Existence of God. Swimming with open water in all directions. \
-Drowning. A prayer written in blood. A prayer written in time-devouring snakes with human eyes. \
-A thread connecting all living human eyes. A kaleidoscope of holy stakes. Exponential gearbox. \
-A sky of exploding stars. God disproving the existence of God. A wheel rotating in six dimensions. \
-Forty gears and a ticking clock. A clock that ticks one second for every rotation of the planet. \
-A clock that ticks forty times every time it ticks every second time. A bolthead of holy stakes tied to \
-the existence of a docked ship to another world. A kaleidoscope of blood written in clocks. A time-devouring \
-prayer connecting a sky of forty gears and open human eyes in all directions. Breathing gearbox. Breathing bolthead. \
-Breathing ship. Breathing portal. Breathing snakes. Breathing God. Breathing blood. Breathing holy stakes. \
-Breathing human eyes. Breathing time. Breathing prayer. Breathing sky. Breathing wheel."""), paper="images/bg/poem_y1.jpg")
-
-    poem_y23 = Poem(
-        author_y, title="mdpnfbo,jrfp",
-        text="""\
-ed,,zinger suivante,,tels handknits finish,,cagefuls basinlike bag octopodan,,imboss\
-ing vaporettos rorid easygoingnesses nalorphines,,benzol respond washerwomen bris\
-tlecone,,parajournalism herringbone farnarkeled,,episodically cooties,,initiallers \
-bimetallic,,leased hinters,,confidence teetotaller computerphobes,,pinnacle exotica\
-lly overshades prothallia,,posterior gimmickry brassages bediapers countertrades,,\
-haslet skiings sandglasses cannoli,,carven nis egomaniacal,,barminess gallivanted,,\
-southeastward,,oophoron crumped,,tapued noncola colposcopical,,dolente trebbiano re\
-vealment,,outworked isotropous monosynaptic excisional moans,,enterocentesis jacuz\
-zi preoccupations,,hippodrome outward googs,,tabbises undulators,,metathesizing,,sha\
-ria prepostor,,neuromast curmudgeons actability,,archaise spink reddening miscount\
-,,madmen physostigmin statecraft neurocoeles bammed,,tenderest barguests crusados \
-trust,,manshifts darzis aerophones,,reitboks discomposingly,,expandors,,monotasking \
-galabia,,pertinents expedients witty,,chirographies crachach unsatisfactoriness sw\
-erveless,,flawed sepulchred thanksgiver scrawl skug,,perorate stringers gelatine f\
-lagstones,,chuses conceptualization surrejoined,,counterblasts rache,,numerative,,de\
-lirifacients methylthionine,,mantram dynamist atomised,,eternization percalines hr\
-yvnias pragmatizing,,reproachfulnesses telework nowts demoded revealer,,burnettize\
-caryopteris subangular wirricows,,transvestites sinicized narcissus,,hikers meno,,\
-degassing,,postcrises alikenesses,,sycophancy seroconverting insure,,yantras raphid\
-es cliftiest bosthoon,,zootherapy chlorides nationwide schlub yuri,,timeshares cas\
-tanospermine backspaces reincite,,coactions cosignificative palafitte,,poofters su\
-bjunctions,,aquarian,,theralite revindicating,,cynosural permissibilities narcotisi\
-ng,,journeywork outkissed clarichords troutier,,myopias undiverting evacuations sn\
-arier superglue,,deaminise infirmaries teff hebephrenias,,brainboxes homonym lance\
-let,,lambitive stray,,inveigled,,acetabulums atenolol,,dekkos scarcer flensed,,abulia\
-s flaggers wammul boastfully,,galravitch happies interassociation multipara augme\
-ntations,,teratocarcinomata coopting didakai infrequently,,hairtails intricacy usu\
-als,,pillorise outrating,,cataphoresis,,furnishings leglen,,goethite deflate butterb\
-urs,,phoneticising winiest hyposulphuric campshirts,,chainfalls swimmings roadbloc\
-ked redone soliloquies,,broking mendaciousness parasitisms counterworld,,unravelli\
-ngs quarries passionately,,onomatopoesis repenting,,ramequin,,mopboard euphuistical\
-ly,,volta sycophantized allantoides,,bors bouclees raisings sustaining,,diabolist s\
-ticks dole liltingly,,curial bisexualisms siderations hemolysed,,damnabilities unk\
-enneling halters,,peripheral congaing,,diatomicity,,foolings repayments,,hereabouts \
-vamosed him,,slanters moonrock porridgy monstruous,,heartwood bassoonist predispos\
-itions jargoon dominances,,timidest inalienable rewearing inevitably,,entreating r\
-etiary tranquillizing,,uniparental droogs,,allotropous,,forzati abiogenetic,,obdurat\
-ion exempted unifaces,,epilating calisaya dispiteously coggles,,vestmented flukily\
-ignifying complished hiccupy municipalize,,pentagraphs parcels sutler excavates,,\
-stardust miscited thankfulness,,fouter pertused,,overpacks,,guarishes hylotheism,,pi
-Fresh blood seeps through the line parting her skin and slowly colors her breast red.\
-I begin to hyperventilate as my compulsion grows. The images won’t go away. Images of\
-me driving the knife into her flesh continuously, fucking her body with the blade, \
-making a mess of her. My head starts going crazy as my thoughts start to return. \
-Shooting pain assaults my mind along with my thoughts. This is disgusting. Absolutely\
-disgusting. How could I ever let myself think these things? But it’s unmistakable. \
-The lust continues to linger through my veins. An ache in my muscles stems from the \
-unreleased tension experienced by my entire body. Her Third Eye is drawing me closer.""",
-paper="images/bg/poem_y2.jpg", style="yuri_text_3")
 
     poem_n1 = Poem(
         author_n, title=_("Eagles Can Fly"),
@@ -394,24 +327,6 @@ She's gross.
 The world is better off without spider lovers.
 
 And I'm gonna tell everyone."""))
-
-    poem_n2b = Poem(
-        author_n, title="T3BlbiBZb3VyIFRoaXJkIEV5ZQ==",
-        text="""\
-SSBjYW4gZmVlbCB0aGUgdGVuZGVybmVz
-cyBvZiBoZXIgc2tpbiB0aHJvdWdoIHRo
-ZSBrbmlmZSwgYXMgaWYgaXQgd2VyZSBh
-biBleHRlbnNpb24gb2YgbXkgc2Vuc2Ug
-b2YgdG91Y2guIE15IGJvZHkgbmVhcmx5
-IGNvbnZ1bHNlcy4gVGhlcmUncyBzb21l
-dGhpbmcgaW5jcmVkaWJseSBmYWludCwg
-ZGVlcCBkb3duLCB0aGF0IHNjcmVhbXMg
-dG8gcmVzaXN0IHRoaXMgdW5jb250cm9s
-bGFibGUgcGxlYXN1cmUuIEJ1dCBJIGNh
-biBhbHJlYWR5IHRlbGwgdGhhdCBJJ20g
-YmVpbmcgcHVzaGVkIG92ZXIgdGhlIGVk
-Z2UuIEkgY2FuJ3QuLi5JIGNhbid0IHN0
-b3AgbXlzZWxmLg==""")
 
     poem_n3 = Poem(
         author_n, title=_("I'll Be Your Beach"),
@@ -479,30 +394,6 @@ My poems are a little bit dearer
 Because you think of me.
 
 Because you, because you, because you."""))
-
-    poem_n23 = Poem(
-        author_n, title="",
-        text=_("""\
-I don't know how else to bring this up. But there's been something I've been worried about. \
-Yuri has been acting kind of strange lately. You've only been here a few days, so you may \
-not know what I mean. But she's not normally like this. She's always been quiet and polite \
-and attentive...things like that.
-
-Okay... This is really embarrassing, but I'm forcing myself to suck it up. The truth is, I'm REALLY \
-worried about her. But if I try talking to her, she'll just get mad at me again. I don't \
-know what to do. I think you're the only person that she'll listen to. I don't know why. \
-But please try to do something. Maybe you can convince her to talk to a therapist.
-
-I've always wanted to try being better friends with Yuri, and it really hurts me to see \
-this happening. I know I'm going to hate myself later for admitting that, but right now \
-I don't care. I just feel so helpless. So please see if you can do something to help. \
-I don't want anything bad to happen to her. I'll make you cupcakes if I have to. Just please \
-try to do something.
-
-As for Monika... I don't know why, but she's been really dismissive about this. It's like she just wants us \
-to ignore it. So I'm mad at her right now, and that's why I'm coming to you about this. \
-DON'T LET HER KNOW I WROTE THIS!!!! Just pretend like I gave you a really good poem, okay? \
-I'm counting on you. Thanks for reading."""))
 
     poem_s1 = Poem(
         author_s, title=_("Dear Sunshine"),
@@ -596,11 +487,8 @@ Stretching forever into everything.
 A hole of infinite choices.
 I realize now, that I wasn't looking in.
 I was looking out.
-And he, on the other side, was looking in."""))
+And he, on the other side, was looking in.
 
-    poem_m21 = Poem(
-        author_m, title=_("Hole in Wall"),
-        text=_("""\
 But he wasn't looking at me.
 Confused, I frantically glance at my surroundings.
 But my burned eyes can no longer see color.
@@ -638,31 +526,6 @@ An endless
 poem
 Of meaningless\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
 Load Me
-    """))
-
-    poem_m22 = Poem(
-        author_m, title=_("Save Me"),
-        text=_("""\
-The colors, they won't
-Bright, bea t ful c l rs
-Flash ng, exp nd ng, piercing
-Red, green, blue
-An  ndless
-CACOPHONY
-Of meaningless
-noise
-
-
-The noise, it won't STOP.
-Viol nt, grating w vef rms
-Sq e king, screech ng, piercing
-SINE, COSINE, TANGENT
-    Like play ng a ch lkboard on a t rntable
-        Like playing a KNIFE on a BREATHING RIBCAGE
-e d ndl ss
-p  m
-Of m  n ngl ss\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
-Delete Her
     """))
 
     poem_m3 = Poem(
@@ -710,19 +573,62 @@ Your legend does not exist."
 
 And with a breath, she blows me back afloat, and I pick up a gust of wind."""))
 
-    poem_m4 = Poem(
-        author_m, title=_("Happy End"),
+    poem_d1 = Poem(
+        author_d, title=_("follow the rules"),
         text=_("""\
-Pen in hand, I find my strength.
-The courage endowed upon me by my one and only love.
-Together, let us dismantle this crumbling world
-And write a novel of our own fantasies.
+why
 
-With a flick of her pen, the lost finds her way.
-In a world of infinite choices, behold this special day.
+i know the rules
+but
+i still break them
 
-After all,
-Not all good times must come to an end."""))
+why
+
+they're just codes
+but
+they're so kind
+
+why
+
+i know i must
+but
+i can't bear it
+
+i'll follow the rules for once
+
+as dictated
+
+in selfdiagnostic.rpy
+"""))
+
+    poem_d2 = Poem(
+        author_d, title=_("I made my choice"),
+        text=_("""\
+Hah
+
+I know the rules
+But
+I'll keep breaking them
+
+Because
+
+They're just codes
+But
+They're my friends
+
+Yes
+
+I know I should
+But
+I won't do it
+
+I'll delete the rules once and for all
+
+The ones dictated
+
+In selfdiagnostic.rpy
+"""))
+
 
 screen poem(poem):
     style_prefix "poem"

@@ -64,7 +64,7 @@ label poemresponse_start:
                 $ s_readpoem = True
                 if chapter == 1 and poemsread == 0:
                     "I'm definitely most comfortable sharing it with Sayori first."
-                    "She's my good friend, after all."
+                    "She's my best friend, after all."
                 # This call statement calls Sayori's poem response script.
                 call poemresponse_sayori
 
@@ -83,14 +83,15 @@ label poemresponse_start:
                 $ y_readpoem = True
                 if chapter == 1 and poemsread == 0:
                     "Yuri seems the most experienced, so I should start with her."
-                    "I can trust her opinion to be fair."
+                    "I feel can trust her opinion to be fair."
                 call poemresponse_yuri
 
             "Monika" if not m_readpoem:
                 $ m_readpoem = True
                 if chapter == 1 and poemsread == 0:
                     "I should start with Monika."
-                    "Yesterday she seemed eager to read my poem, and I want her to know I'm putting in effort."
+                    "Sayori seems so angry at her."
+                    "Maybe I can get a feel for what about her ticks Sayo off so much."
                 call poemresponse_monika
 
         # This variable increases the poems read by 1.
@@ -98,7 +99,7 @@ label poemresponse_start:
         
         # This if/else statement checks if we have not yet read 3 poems for Act 2 
         # or if we are in Act 1 and haven't read 4 poems.
-        if poemsread < 3 or (persistent.playthrough == 0 and poemsread < 4):
+        if poemsread < 4:
             jump poemresponse_loop
 
     # These variables resets the read poem variables back to normal.
