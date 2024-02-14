@@ -1479,6 +1479,7 @@ default persistent.lets_play = False
 #   default cookies = False
 # To make sure a variable is set to a given condition use 'define' rather than 'default'.
 
+default persistent.monika_in = False
 default persistent.playername = ""
 default player = persistent.playername
 default persistent.playthrough = 0

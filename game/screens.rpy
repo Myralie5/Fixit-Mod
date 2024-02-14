@@ -593,7 +593,7 @@ screen main_menu():
         else:
             add "menu_art_s"
         add "menu_particles"
-        if persistent.playthrough != 4:
+        if persistent.monika_in == True:
             add "menu_art_m"
         add "menu_fade"
 
