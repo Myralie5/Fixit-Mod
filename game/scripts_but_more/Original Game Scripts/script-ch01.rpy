@@ -78,8 +78,8 @@ label ch01_main:
     show monika 1i at f31 zorder 2
     m "Not welcome in my own club?"
     m "Oh, how far you've fallen, Sayori."
-    show monika 1i at t11 zorder 1
-    show sayori 4i at f11 zorder 2
+    show monika 1i at t31 zorder 1
+    show sayori 4i at f33 zorder 2
     s "Hey, sail your own boat."
     s "Since you left, I've been club president."
     s "So, no, it's not 'your club' anymore, {i}Monika{/i}."
