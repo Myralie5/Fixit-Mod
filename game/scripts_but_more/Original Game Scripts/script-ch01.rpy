@@ -56,6 +56,7 @@ label ch01_main:
     mc "Wait."
     mc "How do you know my name?"
     stop music
+    $ timeleft = 12.453 - get_pos()
     show noise zorder 3 at noisefade(25 + timeleft)
     show vignette as flicker zorder 4 at vignetteflicker(timeleft)
     show vignette zorder 4 at vignettefade(timeleft)
