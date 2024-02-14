@@ -66,7 +66,7 @@ label ch01_main:
 
     scene bg club_day
     with wipeleft_scene
-    show monika 5a
+    show monika 5a at t11 zorder 1
     m "This is where the playtest ends, [player]."
     m "Come back soon!"
 
