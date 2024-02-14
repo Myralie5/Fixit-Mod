@@ -68,11 +68,12 @@ label ch01_main:
     with wipeleft_scene
     show monika 1i at t31 zorder 1
     show sayori 1i at f33 zorder 2
+    pause 1.0
     s "...Monika, you're not welcome here."
-    s "You know that {/i}full well{i}."
+    s "You know that {i}full well{/i}."
     show sayori 1i at t33 zorder 1
     "Ohh."
-    "{/i}This{i} is Monika."
+    "{i}This{/i} is Monika."
     $ m_name = "Monika"
     show monika 1i at f31 zorder 2
     m "Not welcome in my own club?"
@@ -81,7 +82,7 @@ label ch01_main:
     show sayori 4i at f11 zorder 2
     s "Hey, sail your own boat."
     s "Since you left, I've been club president."
-    s "So, no, it's not 'your club' anymore, {/i}Monika{i}."
+    s "So, no, it's not 'your club' anymore, {i}Monika{/i}."
     show sayori 1i at t33 zorder 1
     "Sayo says Monika's name with such vehemence, you'd think Monika killed her puppy."
     "They must have a history."
