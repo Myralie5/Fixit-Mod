@@ -95,9 +95,9 @@ label ch01_main:
     show natsuki 1z at f32 zorder 2
     n "Hey Say-"
     show natsuki 1l at f32 zorder 2
-    pause 1.0
+    pause 1.5
     show natsuki 1c
-    pause 0.5
+    pause 1.0
     show natsuki 1p
     pause 0.5
     show natsuki scream
