@@ -618,7 +618,7 @@ They're my friends
 
 Yes
 
-I know I should
+I know I must
 But
 I won't do it
 

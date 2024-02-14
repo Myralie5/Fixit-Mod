@@ -68,7 +68,7 @@ label ch01_main:
     with wipeleft_scene
     show monika 1i at t31 zorder 1
     show sayori 1i at f33 zorder 2
-    pause 1.0
+    pause 2.0
     s "...Monika, you're not welcome here."
     s "You know that {i}full well{/i}."
     show sayori 1i at t33 zorder 1
@@ -102,8 +102,43 @@ label ch01_main:
     pause 0.5
     show natsuki scream
     n "KYAAAAAAAAAAGHHH!"
-    "end"
-
-    
+    show natsuki at lhide
+    hide natsuki
+    show monika 1l at f31 zorder 2
+    m "O-oh my."
+    m 1n "It seems poor Natsuki didn't take well to my arrival."
+    show monika at t31 zorder 1
+    show sayori 1i at f33 zorder 2
+    s "Of course she didn't."
+    s 1j "You {i}ruined their lives{/i} back then."
+    s "Both of them."
+    show sayori 1i at t33 zorder 1
+    show monika 1m at f31 zorder 2
+    m "..."
+    m 1p "I really did, didn't I."
+    m "I probably owe all of you apologies."
+    m "Especially you, [player]."
+    show monika 1p at t31 zorder 1
+    mc "...?"
+    mc "Um, Monika..."
+    show monika 1d at h31
+    mc "... We've never met before today."
+    show monika 1d at f31 zorder 2
+    m "Wh-what?"
+    m 1l "What about-"
+    show sayori 1o at t21 zorder 1
+    show monika 1g at t31 zorder 2
+    "Sayo walks over and whispers something in Monika's ear."
+    "Monika seems distraught by whatever Sayo's telling her."
+    show sayori 1o at t22 zorder 1
+    show monika 1g at f21 zorder 2
+    m "Wait, so-"
+    show monika 1g at t21 zorder 2
+    show sayori 1o at f22 zorder 1
+    s "Shh! Keep your voice down!"
+    show sayori 1o at t22 zorder 1
+    "Sayori gestures at me."
+    "Monika makes an 'oh' sound, and they keep conversing in hushed tones."
+    "end playtest"
 
 label ch01_end:

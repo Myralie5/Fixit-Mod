@@ -1,5 +1,6 @@
 
 label ch0_main:
+    $ persistent.monika_in = False
     stop music fadeout 2.0
     scene bg corridor
     with dissolve_scene_full
@@ -247,5 +248,4 @@ label ch0_main:
     pause 3.0
     "Huh."
     "Guess I'll just go... write poetry now."
-    #Change this variable upon release.
-    $ persistent.monika_in = False
+    $ persistent.monika_in = True
