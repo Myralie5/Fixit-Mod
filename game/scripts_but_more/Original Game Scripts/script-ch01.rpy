@@ -66,9 +66,42 @@ label ch01_main:
 
     scene bg club_day
     with wipeleft_scene
-    show monika 5a at t11 zorder 1
-    m "This is where the playtest ends, [player]."
-    m "Come back soon!"
-
+    show monika 1i at t31 zorder 1
+    show sayori 1i at f33 zorder 2
+    s "...Monika, you're not welcome here."
+    s "You know that {/i}full well{i}."
+    show sayori 1i at t33 zorder 1
+    "Ohh."
+    "{/i}This{i} is Monika."
+    $ m_name = "Monika"
+    show monika 1i at f31 zorder 2
+    m "Not welcome in my own club?"
+    m "Oh, how far you've fallen, Sayori."
+    show monika 1i at t11 zorder 1
+    show sayori 4i at f11 zorder 2
+    s "Hey, sail your own boat."
+    s "Since you left, I've been club president."
+    s "So, no, it's not 'your club' anymore, {/i}Monika{i}."
+    show sayori 1i at t33 zorder 1
+    "Sayo says Monika's name with such vehemence, you'd think Monika killed her puppy."
+    "They must have a history."
+    show monika 1i at f31 zorder 2
+    m "Oh, right."
+    m "You were my VP before."
+    m "So why-"
+    show sayori 1m at t33 zorder 1
+    show monika 1d at t31 zorder 1
+    show natsuki 1z at f32 zorder 2
+    n "Hey Say-"
+    show natsuki 1l at f32 zorder 2
+    pause 2.0
+    show natsuki 1c
+    pause 0.5
+    show natsuki 1p
+    pause 0.5
+    show natsuki scream
+    n "KYAAAAAAAAAAGHHH!"
+    
+    monika 1p
 
 label ch01_end:

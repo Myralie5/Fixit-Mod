@@ -247,4 +247,5 @@ label ch0_main:
     pause 3.0
     "Huh."
     "Guess I'll just go... write poetry now."
-    $ persistent.monika_in = True
+    #Change this variable upon release.
+    $ persistent.monika_in = False
