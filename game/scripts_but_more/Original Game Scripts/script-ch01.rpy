@@ -101,7 +101,7 @@ label ch01_main:
     pause 0.5
     show natsuki scream
     n "KYAAAAAAAAAAGHHH!"
+
     
-    monika 1p
 
 label ch01_end:
