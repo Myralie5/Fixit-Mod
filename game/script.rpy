@@ -71,50 +71,50 @@ label start:
 
     #     ## Day 2
         $ chapter = 2
-        call ch2_main
+        call ch02_main
         call poemresponse_start
-        call ch2_end
+        call ch02_end
 
         call poem
 
     #     ## Day 3
         $ chapter = 3
-        call ch3_main
+        call ch03_main
         call poemresponse_start
-        call ch3_end
+        call ch03_end
 
     #    ## Day 4
         $ chapter = 4
-        call ch4_main
+        call ch04_main
 
     #     ## Day 5
         $ chapter = 5
-        call ch5_main
+        call ch05_main
 
 
         $ chapter = 6
-        call ch6_main
+        call ch06_main
         
         $ chapter = 7
-        call ch7_main    
+        call ch07_main    
         call poem
 
     #   ## Day 2 - Act 2
         $ chapter = 8
-        call ch8_main
+        call ch08_main
         call poemresponse_start
-        call ch8_end
+        call ch08_end
 
         ## Day 3 - Act 2
         $ chapter = 9
-        call ch9_main
+        call ch09_main
         call poemresponse_start
-        call ch9_end
+        call ch09_end
 
     #         ## Day 4 - Act 2
         $ chapter = 10
-        call ch10_main
-        call ch10_end
+        call ch010_main
+        call ch010_end
         return
  
         call ch11_main

@@ -59,7 +59,7 @@ label poemresponse_start:
 
             # This will show Sayori as a menu option IF you haven't shared your
             # poem to her and you are in Act 1.
-            "Sayori" if not s_readpoem and persistent.playthrough == 0:
+            "Sayori" if not s_readpoem:
                 # This variable sets that you have read Sayori's poem.
                 $ s_readpoem = True
                 if chapter == 1 and poemsread == 0:
@@ -73,8 +73,8 @@ label poemresponse_start:
             "Natsuki" if not n_readpoem:
                 $ n_readpoem = True
                 if chapter == 1 and poemsread == 0:
-                    "I told Natsuki I was interested in her poems yesterday."
-                    "It's probably only fair if I shared mine with her first."
+                    "Natsuki was so scared yesterday."
+                    "I should ask if she's okay."
                 call poemresponse_natsuki
 
             # This will show Yuri as a menu option IF you haven't shared your
@@ -91,7 +91,7 @@ label poemresponse_start:
                 if chapter == 1 and poemsread == 0:
                     "I should start with Monika."
                     "Sayori seems so angry at her."
-                    "Maybe I can get a feel for what about her ticks Sayo off so much."
+                    "Maybe I can ask her about their implied history."
                 call poemresponse_monika
 
         # This variable increases the poems read by 1.

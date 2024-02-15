@@ -139,6 +139,61 @@ label ch01_main:
     show sayori 1o at t22 zorder 1
     "Sayori gestures at me."
     "Monika makes an 'oh' sound, and they keep conversing in hushed tones."
+    show sayori at thide
+    hide sayori
+    show monika at thide
+    hide monika
+    "They move to the closet area, where they keep talking."
+    "It's at this point that Yuri arrives."
+    show yuri 1d at t11 zorder 1
+    play music t3
+    y "Hello, [player]!"
+    y 1b "How are you today?"
+    mc "Good, how about you?"
+    y "Doing better than ever before."
+    y "Thanks for asking."
+    y 1f "By the way..."
+    y "Where are Sayori and Natsuki?"
+    mc "Natsuki showed up here earlier, then left."
+    mc "Sayo's over there, talking with a new girl."
+    y 1h "A new girl, huh..."
+    "Yuri looks over to the closet..."
+    show yuri 1r at t11 zorder 1
+    y "What..."
+    y "...is"
+    stop music
+    y 1y7 "{i}SHE{/i}"
+    play music t3
+    y 1r "doing here, [player]?"
+    mc "She just kinda... showed up?"
+    "What did Yuri just do with her eyes?"
+    "..."
+    "Why did it scare me so much?"
+    y 3l "Apologies, [player]."
+    y 3t "I shouldn't have yelled at you, when it's her that I'm angry at."
+    mc "I-it's okay..."
+    y "(Argh. I bet he's scared of me now.)"
+    y "(I really should work on not lashing out.)"
+    mc "Well, ah, I'm gonna go look for Natsuki."
+    mc "D-do you want to come?"
+    y 2d "Of course, [player]."
+    y 1b "Helping a friend is a valiant cause indeed."
+    "Yuri just said a big word and I'm not entirely certain what it means."
+    "But it sounded positive, sooo..."
+    mc "Alright. Let's go, then."
+
+    scene bg corridor
+    with wipeleft_scene
+
+    "We find Natsuki after a while of looking."
+    show natsuki 12f at t22 zorder 1
+    show yuri 3t at f21 zorder 1
+    y "Natsuki?"
+    y "Are you alright?"
+    show yuri 3t at t21 zorder 1
+    show natsuki 12g at f22 zorder 2
+    n "She's in there, Yuri."
+    n "No matter how hard we try, we're never able to escape her."
     "end playtest"
 
 label ch01_end:
