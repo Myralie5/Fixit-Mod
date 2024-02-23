@@ -1,4 +1,4 @@
 copy shtuff
-show sayori 1a at t11 zorder 1
-show sayori 1a at f11 zorder 2
+    show sayori 1a at t11 zorder 1
+    show sayori 1a at f11 zorder 2
 "end playtest"

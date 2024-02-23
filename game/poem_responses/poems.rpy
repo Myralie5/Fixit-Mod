@@ -604,7 +604,7 @@ in selfdiagnostic.rpy
     poem_d2 = Poem(
         author_d, title=_("I made my choice"),
         text=_("""\
-Hah
+See
 
 I know the rules
 But
