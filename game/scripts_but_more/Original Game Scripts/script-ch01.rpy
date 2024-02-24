@@ -431,11 +431,11 @@ label ch01_end:
             d "But he's incredibly important to any matters regarding [currentuser]."
             "Who's [currentuser]?"
             d "And this definitely involves them."
-        else
+        else:
         s "You just need to talk to 'them', don't you?"
         "Who's 'them'?"
         d "Well, this definitely involves them."
-    else
+    else:
         s "You just need to talk to 'them', don't you?"
         "Who's 'them'?"
         d "Well, this definitely involves them."

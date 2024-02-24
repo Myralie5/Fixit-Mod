@@ -476,11 +476,11 @@ label ch1_n_end:
     mc "Yeah...guess not."
     "I decide to humor her with that last comment."
     "I don't really care how old everyone is, but if Natsuki is feeling proud then I won't take that away from her."
-        if poemsread == 1:
-            mc "Also, Natsuki, I was wondering if I could ask you..."
-            mc "Are you good for the plan?"
-            n "Yeah, totally."
-            $ n_firstpoem == True
+    if poemsread == 1:
+        mc "Also, Natsuki, I was wondering if I could ask you..."
+        mc "Are you good for the plan?"
+        n "Yeah, totally."
+        $ n_firstpoem == True
     mc "I hope this isn't embarassing or something..."
     show natsuki 5m at t11 zorder 1
     mc "But, are you okay?"
