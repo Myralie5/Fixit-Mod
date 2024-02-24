@@ -432,15 +432,14 @@ label ch01_end:
             "Who's [currentuser]?"
             d "And this definitely involves them."
         else:
-        s "You just need to talk to 'them', don't you?"
-        "Who's 'them'?"
-        d "Well, this definitely involves them."
+            s "You just need to talk to 'them', don't you?"
+            "Who's 'them'?"
+            d "Well, this definitely involves them."
     else:
         s "You just need to talk to 'them', don't you?"
         "Who's 'them'?"
         d "Well, this definitely involves them."
     d "And that's neither my problem nor yours."
-    s 
 
 label ch1_end_natsuki:
     $ ch1_choice = "natsuki"
