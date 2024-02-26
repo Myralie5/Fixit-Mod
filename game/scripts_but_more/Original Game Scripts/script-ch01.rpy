@@ -384,11 +384,11 @@ label ch01_end:
     menu:
         "So, of course that's going to be...!"
         "Natsuki.":
-            call ch1_end_natsuki
+            call ch01_end_natsuki
         "Yuri.":
-            call ch1_end_yuri
+            call ch01_end_yuri
         "Help me, Sayori!!":
-            call ch1_end_sayori
+            call ch01_end_sayori
 
     show sayori 1a at t11 zorder 2
     s "Well, now that we're past that..."
@@ -441,7 +441,7 @@ label ch01_end:
         d "Well, this definitely involves them."
     d "And that's neither my problem nor yours."
 
-label ch1_end_natsuki:
+label ch01_end_natsuki:
     $ ch1_choice = "natsuki"
     stop music fadeout 1.0
     mc "Um..."
@@ -543,7 +543,7 @@ label ch1_end_natsuki:
     hide natsuki
     return
 
-label ch1_end_yuri:
+label ch01_end_yuri:
     $ ch1_choice = "yuri"
     stop music fadeout 1.0
     mc "Natsuki."
@@ -662,7 +662,7 @@ label ch1_end_yuri:
     y "Y-Yeah."
     return
 
-label ch1_end_sayori:
+label ch01_end_sayori:
     $ ch1_choice = "sayori"
     mc "N-Natsuki..."
     show natsuki 5f
