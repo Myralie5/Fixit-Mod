@@ -215,6 +215,7 @@ label ch01_main:
     with wipeleft_scene
 
     "Sayo wants us sharing poems now..."
+    return
 
 label ch01_end:
     stop music fadeout 1.0

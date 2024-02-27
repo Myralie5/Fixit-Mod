@@ -89,7 +89,7 @@ label ch0_main:
     show yuri 1d zorder 1 at t33
     mc "By all means, go ahead, Yuri."
     show yuri 2b zorder 2 at f33
-    y 2b "I read a book recently called Portrait of Makarov."
+    y 2b "I read a book recently called Portrait of Markov."
     y 2k "It's somewhat dark, being classified as a quasi-horror novel, but it's quite interesting."
     show yuri 2a zorder 1 at t33
     mc "What about you, Natsuki?"
