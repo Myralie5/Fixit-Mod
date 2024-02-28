@@ -1,223 +1,104 @@
-
-label ch01_main:
-    stop music fadeout 2.0
-    scene bg residential_day
-    with dissolve_scene_full
-    play music t2
-
-    "It's a new day."
-    "Gwynn hasn't said anything, so I assume she's made good on her promise."
-    "So here I am, waiting outside Sayori's house for her to get up."
-    "It's almost getting to the point where I might go in and wake her myself."
-    "But, speak of the devil, here she comes."
-    show sayori 2r zorder 1 at t11
-    s "Hey, [player]!"
-    mc "Hey, Sayori."
-    mc "You're actually up on time for once."
-    s 5c "Heyy!"
-    s 5d "I get up on time normally..."
-    pause 1.0
-    mc "... Sayori."
-    s 5c "... Yeah?"
-    mc "Are we talking about the same person?"
-    s 4p "HEY!!!"
-    s "MEANIE!!!"
-    pause 2.0
-    s 1r "I'm glad we've gone back to doing this, [player]."
-    mc "Yeah."
-    mc "Me too."
-    show sayori 1o at h11
-    "All of a sudden, we hear someone singing some kind of love song not too far away from us."
-    m "Everyday, I dream of a future where I can be with you..."
-    mc "Huh?"
-    mc "Who's that?"
-    s 1i "We should get to school, [player]."
-    mc "Wha-"
-    "Sayori pulls me in the direction of the school."
-    "I play along, and soon we're at school."
-
-    scene bg class_day
-    with wipeleft_scene
-    play music t3
-
-    "I've been waiting all day for the end of school so I can go and hang out with the Literature Club girls."
-    "But before I can, a girl I haven't seen before stops me in class."
-    show monika 5a zorder 1 at t11
-    m "Hey, [player]!"
-    m "Do you know the way to the Literature Club?"
-    "I have a bad feeling about this girl."
-    "Somehow, I feel like I remember her from somewhere."
-    "But my brain keeps telling me not to trust her."
-    mc "Y-yeah."
-    mc "I'm part of it, actually."
-    mc "Do you want me to show you the way?"
-    m "Sure, [player]."
-    "I turn to the exit, then almost immediately turn back to this girl."
-    mc "Wait."
-    mc "How do you know my name?"
-    stop music
-    $ timeleft = 12.453 - get_pos()
-    show noise zorder 3 at noisefade(25 + timeleft)
-    show vignette as flicker zorder 4 at vignetteflicker(timeleft)
-    show vignette zorder 4 at vignettefade(timeleft)
-    show layer master at layerflicker(timeleft)
-    m 5b "Don't worry about it."
-    m "We were going to the Literature Club, remember?"
-
+label ch1_main:
     scene bg club_day
-    with wipeleft_scene
-    show monika 1i at t31 zorder 1
-    show sayori 1i at f33 zorder 2
-    pause 2.0
-    s "...Monika, you're not welcome here."
-    s "You know that {i}full well{/i}."
-    show sayori 1i at t33 zorder 1
-    "Ohh."
-    "{i}This{/i} is Monika."
-    $ m_name = "Monika"
-    show monika 1i at f31 zorder 2
-    m "Not welcome in my own club?"
-    m "Oh, how far you've fallen, Sayori."
-    show monika 1i at t31 zorder 1
-    show sayori 4i at f33 zorder 2
-    s "Hey, sail your own boat."
-    s "Since you left, I've been club president."
-    s "So, no, it's not 'your club' anymore, {i}Monika{/i}."
-    show sayori 1i at t33 zorder 1
-    "Sayo says Monika's name with such vehemence, you'd think Monika killed her puppy."
-    "They must have a history."
-    show monika 1i at f31 zorder 2
-    m "Oh, right."
-    m "You were my VP before."
-    m "So why-"
-    show sayori 1m at t33 zorder 1
-    show monika 1d at t31 zorder 1
-    show natsuki 1z at f32 zorder 2
-    n "Hey Say-"
-    show natsuki 1l at f32 zorder 2
-    pause 1.5
-    show natsuki 1c
-    pause 1.0
-    show natsuki 1p
-    pause 0.5
-    show natsuki scream
-    n "KYAAAAAAAAAAGHHH!"
-    show natsuki at lhide
-    hide natsuki
-    show monika 1l at f31 zorder 2
-    m "O-oh my."
-    m 1n "It seems poor Natsuki didn't take well to my arrival."
-    show monika at t31 zorder 1
-    show sayori 1i at f33 zorder 2
-    s "Of course she didn't."
-    s 1j "You {i}ruined their lives{/i} back then."
-    s "Both of them."
-    show sayori 1i at t33 zorder 1
-    show monika 1m at f31 zorder 2
-    m "..."
-    m 1p "I really did, didn't I."
-    m "I probably owe all of you apologies."
-    m "Especially you, [player]."
-    show monika 1p at t31 zorder 1
-    mc "...?"
-    mc "Um, Monika..."
-    show monika 1d at h31
-    mc "... We've never met before today."
-    show monika 1d at f31 zorder 2
-    m "Wh-what?"
-    m 1l "What about-"
-    show sayori 1o at t21 zorder 1
-    show monika 1g at t31 zorder 2
-    "Sayo leans over and whispers something in Monika's ear."
-    "Monika seems distraught by whatever Sayo's telling her."
-    show sayori 1o at t22 zorder 1
-    show monika 1g at f21 zorder 2
-    m "Wait, so-"
-    show monika 1g at t21 zorder 2
-    show sayori 1o at f22 zorder 1
-    s "Shh! Keep your voice down!"
-    show sayori 1o at t22 zorder 1
-    "Sayori gestures at me."
-    "Monika makes an 'oh' sound, and they keep conversing in hushed tones."
-    show sayori at thide
-    hide sayori
-    show monika at thide
+    with dissolve_scene_half
+    play music t2
+    show monika 5 zorder 2 at t11
+
+    m "Hi again, [player]!"
+    m "Glad to see you didn't run away on us. Hahaha!"
+    mc "Nah, don't worry."
+    mc "This might be a little strange for me, but I at least keep my word."
+    show monika zorder 1 at thide
     hide monika
-    "They move to the closet area, where they keep talking."
-    "It's at this point that Yuri arrives."
-    show yuri 1d at t11 zorder 1
-    play music t3
-    y "Hello, [player]!"
-    y 1b "How are you today?"
-    mc "Good, how about you?"
-    y "Doing better than ever before."
-    y "Thanks for asking."
-    y 1f "By the way..."
-    y "Where are Sayori and Natsuki?"
-    mc "Natsuki showed up here earlier, then left."
-    mc "Sayo's over there, talking with a new girl."
-    y 1h "A new girl, huh..."
-    "Yuri looks over to the closet..."
-    show yuri 1r at t11 zorder 1
-    y "What..."
-    y "...is"
-    stop music
-    y 1y7 "{i}SHE{/i}"
-    play music t3
-    y 1r "doing here, [player]?"
-    mc "She just kinda... showed up?"
-    "What did Yuri just do with her eyes?"
-    "..."
-    "Why did it scare me so much?"
-    pause 1.0
-    y 3l "Apologies, [player]."
-    y 3t "I shouldn't have yelled at you, when it's her that I'm angry at."
-    mc "I-it's okay..."
-    y "(Argh. I bet he's scared of me now.)"
-    y "(I really should work on not lashing out.)"
-    mc "Well, ah, I'm gonna go look for Natsuki."
-    mc "D-do you want to come?"
-    y 2d "Of course, [player]."
-    y 1b "Helping a friend is a valiant cause indeed."
-    "Yuri just said a big word and I'm not entirely certain what it means."
-    "But it sounded positive, sooo..."
-    mc "Alright. Let's go, then."
-
-    scene bg corridor
-    with wipeleft_scene
-    stop music
-
-    "We find Natsuki after a while of looking."
-    show natsuki 12f at t22 zorder 1
-    show yuri 3t at f21 zorder 1
-    y "Natsuki?"
-    y "Are you alright?"
-    show yuri 3t at t21 zorder 1
-    show natsuki 12h at f22 zorder 2
-    n "She's in there, Yuri."
-    n "No matter how hard we try, we're never able to escape her."
-    show yuri 3t at f21 zorder 2
-    show natsuki 12h at t22 zorder 1
-    y "Natsuki..."
-    show yuri 3w at f21 zorder 2
-    pause 1.5
-    y 3r "Here's my plan."
-    y "We go in and act normal today."
-    y "We see if this Monika instance is a threat like the last one."
-    y "If she isn't, good, continue on with your regularly sheduled life."
-    y "If she is, we reconvene at lunch."
-    show yuri 3r at t21 zorder 1
-    pause 0.5
-    show natsuki 12e at f22 zorder 2
-    n "...That could work."
-
-    show bg club_day
-    with wipeleft_scene
-    hide yuri
+    "Well, I'm back at the Literature Club."
+    "I was the last to come in, so everyone else is already hanging out."
+    show yuri 1a zorder 2 at t32
+    y "Thanks for keeping your promise, [player]."
+    y "I hope this isn't too overwhelming of a commitment for you."
+    y 1u "Making you dive headfirst into literature when you're not accustomed to it..."
+    show natsuki 4e zorder 2 at t33
+    n "Oh, come on! Like he deserves any slack."
+    n "Sayori told me you didn't even want to join any clubs this year."
+    n "And last year, too!"
+    n 4c "I don't know if you plan to just come here and hang out, or what..."
+    n "But if you don't take us seriously, then you won't see the end of it."
+    show monika 2b at l41
+    m "Natsuki, you certainly have a big mouth for someone who keeps her manga collection in the clubroom."
+    n 4o "M-M-M...!!"
+    show monika at lhide
+    hide monika
+    "Natsuki finds herself stuck between saying \"Monika\" and \"Manga\"."
+    show natsuki at h33
+    n 1v "Manga is literature!!"
+    show natsuki zorder 1 at thide
     hide natsuki
-
-    show yuri 1a at t11 zorder 1
-    y "Hey, [player]."
+    "Swiftly defeated, Natsuki plops back into her seat."
+    show yuri zorder 2 at t22
+    show sayori 2x zorder 3 at f21
+    s "Don't worry, guys~"
+    s "[player] always gives it his best as long as he's having fun."
+    s "He helps me with busywork without me even asking."
+    s "Like cooking, cleaning my room..."
+    show sayori 2a zorder 2 at t21
+    show yuri zorder 3 at f22
+    y 2m "How dependable..."
+    show yuri zorder 2 at t22
+    mc "Sayori, that's because your room is so messy it's distracting."
+    mc "And you almost set your house on fire once."
+    show sayori at s21
+    s 5 "Is that so... Ehehe..."
+    show yuri zorder 3 at f22
+    y 1s "You two are really good friends, aren't you?"
+    y "I might be a little jealous..."
+    show yuri zorder 2 at t22
+    show sayori zorder 3 at f21
+    s 1 "How come? You and [player] can become good friends too!"
+    show sayori zorder 2 at t21
+    show yuri zorder 3 at f22
+    y 4b "U-Um..."
+    show yuri zorder 2 at t22
+    mc "S-Sayori--"
+    show sayori zorder 3 at f21
+    s "Hmm?"
+    show sayori zorder 2 at t21
+    mc "..."
+    "As usual, Sayori seems oblivious to the weird situation she just put me into."
+    show sayori zorder 3 at f21
+    s 4x "Oh, oh! Yuri even brought you something today, you know~"
+    show sayori zorder 2 at t21
+    show yuri zorder 3 at f22
+    y 3n "W-Wait! Sayori..."
+    show yuri zorder 2 at t22
+    mc "Eh? Me?"
+    show yuri zorder 3 at f22
+    y 3o "Um... Not really..."
+    show yuri zorder 2 at t22
+    show sayori zorder 3 at f21
+    s 4r "Don't be shy~"
+    show sayori zorder 2 at t21
+    show yuri zorder 3 at f22
+    y "It's really nothing..."
+    show yuri zorder 2 at t22
+    mc "What is it?"
+    show yuri zorder 3 at f22
+    y 4c "N-Never mind!"
+    y "Sayori made it sound like a big deal when it's really not..."
+    y "Uuuuh, what do I do..."
+    show yuri zorder 2 at t22
+    show sayori zorder 3 at f21
+    s 1g "Eh? I'm sorry, Yuri, I wasn't thinking..."
+    show sayori zorder 1 at thide
+    hide sayori
+    show yuri zorder 2 at t11
+    "I guess that means it's up to me to rescue this situation..."
+    mc "Hey, don't worry about it."
+    mc "First of all, I wasn't expecting anything in the first place."
+    mc "So any nice gesture from you is a pleasant surprise."
+    mc "It'll make me happy no matter what."
+    y 3v "I-Is that so..."
+    mc "Yeah. I won't make it a big deal if you don't want it to be."
+    y "Alright..."
+    y 1a "Well, here."
     "Yuri reaches into her bag and pulls out a book."
     y "I didn't want you to feel left out..."
     y "So I picked out a book that I thought you might enjoy."
@@ -227,7 +108,7 @@ label ch01_main:
     y 4b "Discuss it...if you wanted..."
     "Th-This is..."
     "How is this girl accidentally being so cute?"
-    "She even picked out a book she thinks I'll like..."
+    "She even picked out a book she thinks I'll like, despite me not reading much..."
     mc "Yuri, thank you! I'll definitely read this!"
     "I enthusiastically take the book."
     show yuri 2m zorder 2 at t11
@@ -237,9 +118,10 @@ label ch01_main:
     show yuri zorder 1 at thide
     hide yuri
 
-    "Now that everyone's settled in, I expected Sayo to kick off some at least vaguely scheduled activities for the club."
+
+    "Now that everyone's settled in, I expected Monika to kick off some scheduled activities for the club."
     "But that doesn't seem to be the case."
-    "Sayori and Monika are having an awkward conversation near the teacher's desk."
+    "Sayori and Monika are having a cheery conversation in the corner."
     "Yuri's face is already buried in a book."
     "I can't help but notice her intense expression, like she was waiting for this chance."
     "Meanwhile, Natsuki is rummaging around in the closet."
@@ -249,38 +131,47 @@ label ch01_main:
     call expression nextscene
 
 
-    show sayori 1a at t11
-    s "By the way, [player], did you remember to write a poem last night?"
+    show monika 1 zorder 2 at t21
+    hide sayori
+    hide natsuki
+    hide yuri
+    m "By the way, did you remember to write a poem last night?"
     mc "Y-Yeah..."
     "My relaxation ends."
     "I can't believe I agreed to do something so embarrassing."
     "I couldn't really find much inspiration, since I've never really done this before."
-    s "Well, now that everyone's ready, why don't you find someone to share with?"
+    m "Well, now that everyone's ready, why don't you find someone to share with?"
     show sayori 4q zorder 2 at t22
-    s "I personally can't wait to see what everyone's written~!"
+    s "I can't wait~!"
     show sayori zorder 1 at thide
+    show monika zorder 1 at thide
     hide sayori
-    "Sayori pulls out her poem."
-    "It's on a wrinkled sheet of loose leaf torn from a spiral notebook."
-    "Monika rummages around in her bag and finds a composition notebook."
-    "Even though she couldn't have known we were writing poems, she still had some with her."
-    "I can already see her pristine handwriting from where I sit."
+    hide monika
+    "Sayori and Monika enthusiastically pull out their poems."
+    "Sayori's is on a wrinkled sheet of loose leaf torn from a spiral notebook."
+    "On the other hand, Monika wrote hers in a composition notebook."
+    "I can already see Monika's pristine handwriting from where I sit."
     "Natsuki and Yuri reluctantly comply as well, reaching into their bags."
     "I do the same, myself."
 
     return
 
-label ch01_end:
+
+label ch1_end:
     stop music fadeout 1.0
     scene bg club_day
     with wipeleft_scene
     play music t3
-    "Well..."
-    "That was one hell of an experience."
-    "A few of these girls in particular are {i}terrible{/i} at making people feel welcomed."
-    "I glance across the room."
-    "Across the room, Sayori and Monika are somewhat awkwardly talking."
-    "Good for them, at least."
+    mc "Phew..."
+    "I guess that's everyone."
+    "I glance around the room."
+    "That was a little more stressful than I anticipated."
+    "It's as if everyone is judging me for my mediocre writing abilities..."
+    "Even if they're just being nice, there's no way my poems can stand up to theirs."
+    "This is a literature club, after all."
+    "I sigh."
+    "I guess that's what I ended up getting myself into."
+    "Across the room, Sayori and Monika are happily chatting."
     "My eyes land on Yuri and Natsuki."
     show yuri 2g zorder 2 at t21
     show natsuki 1g zorder 2 at t22
@@ -323,7 +214,7 @@ label ch01_end:
     n "Thanks, but it really didn't come out nice at all!"
     show natsuki zorder 2 at t22
     show yuri zorder 3 at f21
-    y 1i "Agh, sorry..."
+    y 1i "Um..."
     y "Well, I do have a couple suggestions..."
     show yuri zorder 2 at t21
     show natsuki zorder 3 at f22
@@ -438,64 +329,92 @@ label ch01_end:
     menu:
         "So, of course that's going to be...!"
         "Natsuki.":
-            call ch01_end_natsuki
+            call ch1_end_natsuki
         "Yuri.":
-            call ch01_end_yuri
+            call ch1_end_yuri
         "Help me, Sayori!!":
-            call ch01_end_sayori
+            call ch1_end_sayori
 
-    show sayori 1a at t11 zorder 2
-    s "Well, now that we're past that..."
-    s 4b "Everyone's read each other's poems, right?"
-    s "I hope that it was worthwhile for everyone!"
-    s "Especially you, [player]!"
-    s "And to be honest..."
-    s "It's a nice change of pace from the lazing around we got a little too used to."
-    s "Hehe~"
-    mc "Ah, so my joining the club was responsible for ruining the atmosphere..."
-    s 1c "No, not at all!"
-    s "There's still time before we go home."
-    s 1a "So we'll all relax for a bit."
-    s "And remember..."
-    s "The most important thing about this club..."
-    show sayori 4r zorder 2 at h11
-    s "Is having fun!"
-    show sayori at thide
+    scene bg club_day
+    show monika 4b zorder 2 at t11
+    with wipeleft_scene
+    m "Okay, everyone!"
+    m "It's just about time for us to leave."
+    m "How did you all feel about sharing poems?"
+    show monika 4a
+    show sayori 4x zorder 2 at t31
+    s "It was a lot of fun!"
+    show sayori behind yuri at thide
+    show yuri 1i zorder 2 at t31
     hide sayori
-    "I still feel a little bit judged."
-    "But in the end..."
-    "...I guess it's been worth it so far."
-    "As I'm thinking, Sayo comes up to me."
-    show sayori 1a at t11 zorder 2
-    mc "Oh. Hey, Sayo."
-    s 1g "You sound... down. Is everything alright?"
-    show sayori 4m at t11
-    d "I wouldn't worry too much."
-    d "Either of you."
-    s "G-Gwynn?"
-    s "I thought with Monika back, you were done your job..."
-    d "So did I."
-    d "But it appears there are other errors to remedy."
-    "Gwynn keeps talking about 'errors' and 'gamecode'."
-    "Something is going on here."
-    s 1j "We should leave [player] out of this."
-    $ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe", "livehime.exe", "pandatool.exe", "yymixer.exe", "douyutool.exe", "huomaotool.exe"]
-    if not list(set(process_list).intersection(stream_list)):
-        if currentuser != "" and currentuser.lower() != player.lower():
-            d "But he's incredibly important to any matters regarding [currentuser]."
-            "Who's [currentuser]?"
-            d "And this definitely involves them."
-        else:
-            s "You just need to talk to 'them', don't you?"
-            "Who's 'them'?"
-            d "Well, this definitely involves them."
-    else:
-        s "You just need to talk to 'them', don't you?"
-        "Who's 'them'?"
-        d "Well, this definitely involves them."
-    d "And that's neither my problem nor yours."
+    y "Well, I'd say it was worth it."
+    show yuri behind natsuki at thide
+    show natsuki 4q zorder 2 at t31
+    hide yuri
+    n "It was alright. Well, mostly."
+    show natsuki zorder 1 at thide
+    hide natsuki
+    m 1a "[player], how about you?"
+    mc "...Yeah, I'd say the same."
+    mc "It was a neat thing to talk about with everyone."
+    m 1j "Awesome!"
+    m 1a "In that case, we'll do the same thing tomorrow."
+    m "And maybe you learned something from your friends, too."
+    m 3b "So your poems will turn out even better!"
+    mc "..."
+    show monika zorder 1 at thide
+    hide monika
+    "I think to myself."
+    "I did learn a little more about the kinds of poems everyone likes."
+    "With any luck, that means I can at least do a better job impressing those I want to impress."
+    "I nod to myself with newfound determination."
+    show sayori 1x zorder 2 at t11
+    s "[player]!"
+    s "Ready to walk home?"
+    mc "Sure, let's go."
+    s 4q "Ehehe~"
+    "Sayori beams at me."
+    "It truly has been a while since Sayori and I have spent this much time together."
+    "I can't really say I'm not enjoying it, either."
+    scene bg residential_day
+    show sayori 1a zorder 2 at t11
+    with wipeleft_scene
+    mc "Sayori..."
+    mc "About what happened earlier..."
+    s 1b "Eh? What do you mean?"
+    mc "You know, between Yuri and Natsuki."
+    mc "Does that kind of thing happen often?"
+    s 4j "No, no, no!"
+    s "That's really the first time I've seen them fight like that..."
+    s "I promise they're both wonderful people."
+    show sayori at s11
+    s 1g "You don't... You don't hate them, do you??"
+    mc "No, I don't hate them!"
+    mc "I just wanted your opinion, that's all."
+    mc "I can see why they'd make good friends with you."
+    show sayori zorder 2 at t11
+    s 1d "Phew..."
+    s "You know, [player]..."
+    s "It's nice that I get to spend time with you in the club."
+    s "But I think seeing you get along with everyone is what makes me the happiest."
+    s 1x "And I think everyone really likes you, too!"
+    mc "That's--!"
+    s 4q "Ehehe~"
+    s "Every day is going to be so much fun~"
+    mc "Sigh..."
+    "It looks like Sayori still hasn't caught onto the kind of situation I'm in."
+    "Sure, being friends with everyone is nice, but..."
+    "...Does it really need to stop there?"
+    mc "We'll just have to see what the future holds, Sayori."
+    "I pat Sayori on the shoulder."
+    "I said that more to myself than to her, but it's easy to use Sayori as an internal monologue sometimes."
+    show sayori at h11
+    s 1x "Okay~!"
+    "Yeah..."
+    "Let's do this!"
+    return
 
-label ch01_end_natsuki:
+label ch1_end_natsuki:
     $ ch1_choice = "natsuki"
     stop music fadeout 1.0
     mc "Um..."
@@ -527,7 +446,7 @@ label ch01_end_natsuki:
     n 1m "Huh?"
     n "Me?"
     n "But she was so mean to me...!"
-    "Natsuki whines."
+    "Natsuki's voice whines."
     show natsuki zorder 2 at t22
     mc "Look..."
     mc "What we talked about yesterday was right."
@@ -592,12 +511,53 @@ label ch01_end_natsuki:
     show sayori zorder 2 at t41
     mc "I'm sure she appreciated it, Sayori."
     "I pat Sayori on the shoulder."
+    show sayori zorder 1 at thide
     show natsuki zorder 1 at thide
-    show sayori 4l zorder 2 at t11
+    show monika 4m zorder 2 at t11
+    hide sayori
     hide natsuki
+    m "Well, now that we're past that..."
+    m 4b "Everyone's read each other's poems, right?"
+    m "I hope that it was worthwhile for everyone!"
+    m 5 "Especially you, [player]!"
+    m "And to be honest..."
+    m "It's a nice change of pace from the lazing around we got a little too used to."
+    m "Ahahaha!"
+    mc "Ah, so my joining the club was responsible for ruining the atmosphere..."
+    m 1d "No, not at all, not at all!"
+    m "There's still time before we go home."
+    m 1a "So we'll all relax for a bit."
+    m "Of course, besides chatting, we do literature-related things in the clubroom..."
+    m "So maybe you can take the chance to pick up a book, or do some writing."
+    m 1b "After all, that's what the club is for!"
+    show sayori 2j zorder 3 at f31
+    s "I disagree, Monika!"
+    show sayori zorder 2 at t31
+    show monika zorder 3 at f32
+    m 1d "Eh? About what?"
+    show monika zorder 2 at t32
+    show sayori zorder 3 at f31
+    s 2i "That's not the most important thing about the literature club!"
+    s "The most important thing..."
+    show sayori 4r zorder 3 at hf31
+    s "Is having fun!"
+    show sayori zorder 2 at t31
+    show monika zorder 3 at f32
+    m 2l "Ahaha, of course..."
+    m 2a "Well, I guess that's why you're the Vice President, Sayori."
+    show monika zorder 2 at t32
+    show sayori zorder 3 at f31
+    s 4q "Ehehe..."
+    hide sayori
+    hide monika
+    with wipeleft
+    "In the end, though, Monika's right."
+    "Being in the Literature Club probably means I can't spend all my time doing nothing."
+    "But in the end..."
+    "...I guess it's been worth it so far."
     return
 
-label ch01_end_yuri:
+label ch1_end_yuri:
     $ ch1_choice = "yuri"
     stop music fadeout 1.0
     mc "Natsuki."
@@ -716,7 +676,7 @@ label ch01_end_yuri:
     y "Y-Yeah."
     return
 
-label ch01_end_sayori:
+label ch1_end_sayori:
     $ ch1_choice = "sayori"
     mc "N-Natsuki..."
     show natsuki 5f
@@ -810,4 +770,32 @@ label ch01_end_sayori:
     show natsuki zorder 1 at thide
     hide natsuki
     "Natsuki sits down with a blank expression on her face, staring at nothing."
+    show sayori zorder 1 at thide
+    show monika 1i zorder 2 at t11
+    hide sayori
+    mc "So, this is why Sayori is Vice President..."
+    "I whisper to Monika."
+    "She nods in return."
+    m 1d "To be honest..."
+    m "I might come off as a good leader, and I can organize things..."
+    m 3e "But I'm not very good with people..."
+    m "I couldn't even bring myself to interject."
+    m 1m "As President, that's kind of embarrassing of me."
+    m 1l "Ahaha..."
+    mc "Nah..."
+    mc "It's not like I can blame you."
+    mc "I wasn't able to say anything, either."
+    m "Well..."
+    m 2a "I guess that just means Sayori is amazing in her own ways, isn't she?"
+    mc "You could say that."
+    mc "She might be an airhead, but sometimes it's weirdly suspicious that she knows exactly what she's doing."
+    m 5 "I see~"
+    m "Take good care of her, okay?"
+    m "I would hate to see her get herself hurt."
+    mc "That makes two of us..."
+    mc "You can count on me."
+    "Monika smiles sweetly at me, causing my stomach to knot."
+    "Such a genuine person really does make a good President, regardless of what she says."
+    "If only I could get the chance to talk to her a little more..."
     return
+

@@ -263,7 +263,7 @@ label ch1_y_end:
         mc "Yeah, maybe you're right."
         mc "I guess I'll have to keep trying."
         y "I'm counting on you."
-    if poemsread == 1:
+    if poemsread == 0:
         pause 1.0
         mc "Yuri..."
         y 1f "Yeah?"
@@ -476,7 +476,7 @@ label ch1_n_end:
     mc "Yeah...guess not."
     "I decide to humor her with that last comment."
     "I don't really care how old everyone is, but if Natsuki is feeling proud then I won't take that away from her."
-    if poemsread == 1:
+    if poemsread == 0:
         mc "Also, Natsuki, I was wondering if I could ask you..."
         mc "Are you good for the plan?"
         n "Yeah, totally."
@@ -487,7 +487,7 @@ label ch1_n_end:
     n 12a "..."
     n "I'm trying to hold it together..."
     n 12c "I appreciate your concern."
-    n 1t "God, I sound like Yuri..."
+    n 1t "(God, I sound like Yuri...)"
     return
 
 label ch2_n_end:

@@ -1498,8 +1498,8 @@ default persistent.first_load = None
 default persistent.first_poem = None
 default persistent.seen_colors_poem = None
 default persistent.monika_back = None
-default persistent.y_firstpoem = False
-default persistent.n_firstpoem = False
+default y_firstpoem = False
+default n_firstpoem = False
 
 default in_sayori_kill = None
 default in_yuri_kill = None
