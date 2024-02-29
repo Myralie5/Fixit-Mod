@@ -214,63 +214,37 @@ label natsuki_exclusive_1:
     n "Uu..."
     n "I shouldn't be talking about that yet!"
     n "Just finish this chapter!"
-    scene bg club_day
-    with dissolve_cg
     "Natsuki's voice sparkles with excitement."
     "It's a stark contrast to her usual bossy tone."
     "But if she's not used to sharing her favorite manga with her friends, I can understand why."
     "It's hard to express in words the feeling you get when connecting with someone like that."
     "And being able to provide that to Natsuki, for whom it's a rare experience..."
     "The thought makes me smile a little to myself."
-    show monika 4b zorder 3 at f21
-    m "Okay, everyone!"
-    mc "Eh?"
-    m "Are you all ready with today's poems?"
-    mc "..."
-    show monika zorder 2 at t21
-    show natsuki 4w zorder 3 at f22
-    n "Oh, come on!"
-    n "Could your timing be any worse?"
-    show natsuki zorder 2 at t22
-    show monika zorder 3 at f21
-    m 5 "Sorry~!"
-    m "I just need to make sure we have enough time."
-    m "Though you do look pretty cozy over there. Ahaha!"
-    show monika zorder 2 at t21
-    show natsuki zorder 3 at f22
-    n 4o "Eh...?"
-    n 1p "A-Ah!"
+    n "Hey!"
+    n "Turn the page!!!"
+    mc "A-Ah!"
+    scene bg club_day
+    with dissolve_cg
     "Natsuki suddenly notices how close she's gotten to me."
     "She hastily slides herself a good twelve inches away from me."
-    show monika zorder 1 at thide
     show natsuki 1s zorder 2 at t11
-    hide monika
-    mc "Alright..."
-    mc "Guess I'll stop here for now."
-    "I close the book and hand it towards Natsuki."
-    n 2m "You're just giving it back...?"
-    n "Don't you want to know what happens?"
-    mc "Ah... Yeah, but..."
-    mc "Monika just said--"
-    n 2u "Don't be dumb."
-    n "Just take it home with you."
-    mc "Eh?"
-    mc "...Is that really alright?"
-    "I say that mostly because I really didn't plan on using my spare time to read this..."
-    n 4h "Well, of course."
-    n "It would take forever to finish if you didn't take it home."
-    n "Just finish that one before tomorrow, so we can start the next one."
-    n 4g "And if it gets bent, I'll kill you."
-    mc "By tomorrow...?"
-    show natsuki zorder 1 at thide
+    mc "Wh-why don't we{nw}"
+    show screen tear(20, 0.1, 0.1, 0, 32)
+    pause <0.25>
+    hide screen tear
+    show natsuki 1p at h11
+    n "Wh-what was that?"
+    show natsuki at thide
     hide natsuki
-    "I only got partway through the volume so far."
-    "I might fall behind on some shows if I try to get through this..."
-    "But I suppose that's a necessary sacrifice in exchange for seeing Natsuki's enthusiastic face."
-    "Or am I more scared of what will happen if I {i}don't{/i} finish it...?"
-    mc "Alright, then!"
-    "I stand up."
-    "I return to where I put my stuff and carefully slip the book into my bag."
+    "I look around the room."
+    "Yuri's novel is on the ground, and Yuri seems confused how it got there."
+    pause 1.0
+    "Monika seems shaken, and so does Sayo."
+    pause 1.0
+    show sayori 1k at l41
+    s "Ummm..."
+    s 1l "If everyone's ready, let's share poems."
+    "Natsuki and I look at each other, just a little mystified."
     return
 
 

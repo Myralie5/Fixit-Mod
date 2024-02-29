@@ -1,4 +1,4 @@
-label yuri_exclusive_1:
+label yuri_exclusivex_1:
     scene bg club_day
     with wipeleft_scene
     "I'm really curious to talk to Yuri a little bit more..."
@@ -205,16 +205,26 @@ label yuri_exclusive_1:
     y "I...!"
     y "Um..."
     "That got very awkward very fast."
-    "However, we're saved by Sayo."
+    "However,{nw}"
+    show screen tear(20, 0.1, 0.1, 0, 32)
+    pause <0.25>
+    hide screen tear
+    y 3n "I..."
+    y 3f "What... just happened?"
     show yuri at thide
     hide yuri
-    show sayori 4r at t11
-    s "Guys!"
-    s "If everyone's ready, let's share poems!"
-    "Yuri and I let out a collective sigh of relief."
+    "I look around the room."
+    "Natsuki's manga is on the ground, and Natsuki seems confused how they got there."
+    pause 1.0
+    "Monika seems shaken, and so does Sayo."
+    pause 1.0
+    show sayori 1k at l41
+    s "Ummm..."
+    s 1l "If everyone's ready, let's share poems."
+    "Yuri and I look at each other, just a little mystified."
     return
 
-label yuri_exclusive_2:
+label yuri_exclusivex_2:
     $ y_exclusivewatched = True
     play music t6 fadeout 1.0
     scene bg club_day
