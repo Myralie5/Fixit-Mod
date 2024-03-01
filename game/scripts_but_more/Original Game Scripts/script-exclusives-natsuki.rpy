@@ -1,4 +1,4 @@
-label natsuki_exclusive_1:
+label natsuki_exclusivex_1:
     n "Ugh...!"
     "I hear Natsuki utter an exasperated sigh from within the closet."
     "She seems to be annoyed by something."
