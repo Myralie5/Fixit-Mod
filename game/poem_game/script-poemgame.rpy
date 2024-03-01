@@ -9,11 +9,12 @@ init python:
 
     # This class holds a word, and point values for each of the four heroines
     class PoemWord:
-        def __init__(self, s, n, y, glitch=False):
+        def __init__(self, s, n, y, glitch, m=False):
             self.sPoint = s
             self.nPoint = n
             self.yPoint = y
             self.glitch = glitch
+            self.mPoint = m
     
     with renpy.file("poem_game/poemwords.txt") as pf:
         for line in pf:
@@ -110,7 +111,7 @@ init python:
     # Declare Chibi variables for transforms and points (cept Monika), she only needs to move around.
     chibi_s = Chibi('sayori')
     chibi_n = Chibi('natsuki')
-    chibi_m = ChibiTrans()
+    chibi_m = Chibi('monika')
     chibi_y = Chibi('yuri')
 
     # Start of the poem game in python
@@ -164,6 +165,8 @@ init python:
                             renpy.show("n_sticker hop")
                         if t.yPoint >= 3:
                             renpy.show("y_sticker hop")
+                        if t.mPoint >= 3:
+                            renpy.show("m_sticker hop")
                     else:
                         # Act 2
                         if persistent.playthrough == 2 and chapter == 2 and random.randint(0,10) == 0: renpy.show("m_sticker hop") #1/10 chance for Monika's sticker to show.
@@ -184,6 +187,7 @@ init python:
             chibi_s.charPointTotal += t.sPoint
             chibi_n.charPointTotal += t.nPoint
             chibi_y.charPointTotal += t.yPoint
+            chibi_m.charPointTotal += t.mPoint
             progress += 1
     
     # End of the game
@@ -207,6 +211,7 @@ init python:
         s_poemappeal[chapter] = chibi_s.calculate_appeal()
         n_poemappeal[chapter] = chibi_n.calculate_appeal()
         y_poemappeal[chapter] = chibi_y.calculate_appeal()
+        m_poemappeal[chapter] = chibi_m.calculate_appeal()
 
         # Poem winner always has appeal 1 (loves poem)
         exec(poemwinner[chapter][0] + "_poemappeal[chapter] = 1") in globals()
@@ -297,17 +302,15 @@ label poem(transition=True):
     else:
         scene bg notebook
     
-    if persistent.playthrough == 3: 
+    if persistent.playthrough == 9: 
         show m_sticker at sticker_mid #Just Monika.
     else:
-        if persistent.playthrough == 0:
-            show s_sticker at sticker_left #Only show Sayori's sticker in Act 1.
         show n_sticker at sticker_mid #Natsuki's sticker
-        if persistent.playthrough == 2 and chapter == 2:
+        if persistent.playthrough == 9 and chapter == 2:
             show y_sticker_cut at sticker_right #Replace Yuri's sticker with the "cut arms" sticker..
         else:
             show y_sticker at sticker_right #Yuri's sticker
-        if persistent.playthrough == 2 and chapter == 2:
+        if persistent.playthrough == 9 and chapter == 2:
             show m_sticker at sticker_m_glitch #Monika's sticker
         
     if transition:
