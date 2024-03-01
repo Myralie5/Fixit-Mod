@@ -245,7 +245,7 @@ label ch01_main:
     "Meanwhile, Natsuki is rummaging around in the closet."
 
 
-    $ nextscene = poemwinner[0] + "_exclusivex_" + [chapter]
+    $ nextscene = poemwinner[0] + "_exclusivex_" + str(chapter)
     call expression nextscene
 
 
