@@ -196,11 +196,11 @@ label poemresponse_monika:
     elif m_poemappeal[chapter - 1] > 0:
         $ poemopinion = "good"
 
-    $ nextscene = "ch" + pt + str(chapter) + "_m_start"
+    $ nextscene = "ch" + str(chapter) + "_m_start"
     call expression nextscene
 
     if not skip_poem:
-        $ nextscene = "ch" + pt + str(chapter) + "_m_end"
+        $ nextscene = "ch" + str(chapter) + "_m_end"
         call expression nextscene
     return
 
@@ -682,7 +682,6 @@ label ch1_s_end:
     mc "Anyway, thanks for showing me."
     s 1q "Ehehe~"
     s "This was so much fun."
-    s "Monika's the best!"
     mc "Ah...yeah."
     s "But next time, I won't forget."
     s 4x "And I'm gonna write the best poem ever!"
