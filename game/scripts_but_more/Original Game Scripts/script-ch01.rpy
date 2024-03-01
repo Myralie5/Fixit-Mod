@@ -256,7 +256,7 @@ label ch01_main:
     "I can't believe I agreed to do something so embarrassing."
     "I couldn't really find much inspiration, since I've never really done this before."
     s "Well, now that everyone's ready, why don't you find someone to share with?"
-    show sayori 4q zorder 2 at t22
+    show sayori 4q zorder 2 at t11
     s "I personally can't wait to see what everyone's written~!"
     show sayori zorder 1 at thide
     hide sayori

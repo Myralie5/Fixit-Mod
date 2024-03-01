@@ -128,13 +128,13 @@ label poemresponse_sayori:
     
     # These variables sets the next scene chapter to be called based off the
     # chapter and poem opinion and calls it.
-    $ nextscene = "ch" + pt + str(chapter) + "_s_" + poemopinion
+    $ nextscene = "ch" + str(chapter) + "_s_" + poemopinion
     call expression nextscene
     
     # This if statement checks if we are not skipping the poems to call the
     # end of the poem responses for Sayori depending on the chapter.
     if not skip_poem:
-        $ nextscene = "ch" + pt + str(chapter) + "_s_end"
+        $ nextscene = "ch" + str(chapter) + "_s_end"
         call expression nextscene
     return
 
@@ -154,13 +154,13 @@ label poemresponse_natsuki:
 
     # These variables sets the next scene chapter to be called based off the
     # chapter and poem opinion and calls it.
-    $ nextscene = "ch" + pt + str(chapter) + "_n_" + poemopinion
+    $ nextscene = "ch" + str(chapter) + "_n_" + poemopinion
     call expression nextscene
 
     # This if statement checks if we are not skipping the poems to call the
     # end of the poem responses for Natsuki depending on the chapter.
     if not skip_poem:
-        $ nextscene = "ch" + pt + str(chapter) + "_n_end"
+        $ nextscene = "ch" + str(chapter) + "_n_end"
         call expression nextscene
     return
 
@@ -176,11 +176,11 @@ label poemresponse_yuri:
     elif y_poemappeal[chapter - 1] > 0:
         $ poemopinion = "good"
 
-    $ nextscene = "ch" + pt + str(chapter) + "_y_" + poemopinion
+    $ nextscene = "ch" + str(chapter) + "_y_" + poemopinion
     call expression nextscene
 
     if not skip_poem:
-        $ nextscene = "ch" + pt + str(chapter) + "_y_end"
+        $ nextscene = "ch" + str(chapter) + "_y_end"
         call expression nextscene
     return
 
