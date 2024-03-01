@@ -207,7 +207,7 @@ label yuri_exclusivex_1:
     show screen tear(20, 0.1, 0.1, 0, 32)
     pause 0.25
     hide screen tear
-    show yuri 3n t11 at zorder 1
+    show yuri 3n at t11 zorder 1
     y 3n "I..."
     y 3f "What... just happened?"
     show yuri at thide
