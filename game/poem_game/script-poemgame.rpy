@@ -300,6 +300,7 @@ label poem(transition=True):
     if persistent.playthrough == 9: 
         show m_sticker at sticker_mid #Just Monika.
     else:
+        show s_sticker at sticker_left
         show n_sticker at sticker_mid #Natsuki's sticker
         if persistent.playthrough == 9 and chapter == 2:
             show y_sticker_cut at sticker_right #Replace Yuri's sticker with the "cut arms" sticker..
