@@ -2422,6 +2422,8 @@ label ch1_m_start:
     m "If you ever have any suggestions for the club, like new activities, or things we can do better..."
     m 4b "I'm always listening!"
     m "Don't be afraid to bring things up, okay?"
+    pause 1.0
+    m "To Sayori, of course."
     show monika 4a
     mc "Alright...I'll keep that in mind."
     "Of course I'll be afraid to bring things up."
@@ -2438,7 +2440,7 @@ label ch1_m_start:
     m 2a "...Mhm!"
     # This variable and call expression statement sets the 'nextscene' variable to
     # the character you wrote your poem to and calls it.
-    $ nextscene = "m_" + poemwinner[0] + "_" + str(eval(poemwinner[0][0] + "_appeal"))
+    $ nextscene = "m_" + poemwinner[0] + "_" + str(chapter)
     call expression nextscene
 
     mc "I'm sure I'll end up trying different things a lot."
@@ -2488,7 +2490,7 @@ label ch2_m_start:
         "I give my poem to Monika."
         m "..."
         m "...Alright!"
-        $ nextscene = "m_" + poemwinner[1] + "_" + str(eval(poemwinner[1][0] + "_appeal"))
+        $ nextscene = "m_" + poemwinner[1] + "_" + str(chapter)
         call expression nextscene
 
         m 1a "But anyway..."
@@ -2516,7 +2518,7 @@ label ch3_m_start:
         mc "Sure..."
         "I let Monika take the poem I'm holding in my hands."
         m "..."
-        $ nextscene = "m_" + poemwinner[2] + "_" + str(eval(poemwinner[2][0] + "_appeal"))
+        $ nextscene = "m_" + poemwinner[2] + "_" + str(chapter)
         call expression nextscene
 
         m 1a "Anyway...!"
