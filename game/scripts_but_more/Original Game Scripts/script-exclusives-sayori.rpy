@@ -2,19 +2,19 @@ label sayori_exclusivex_1:
     scene bg club_day
     with wipeleft_scene
     show screen tear(20, 0.1, 0.1, 0, 32)
-    pause <0.25>
+    pause 0.25
     hide screen tear
     d "Seems the game can't call this label."
     d "Let's see if I{nw}"
     show screen tear(20, 0.1, 0.1, 0, 32)
-    pause <0.5>
+    pause 0.5
     hide screen tear
     d "Fine, scripts."
     d "You win."
     d "Seems you'll have to try something else."
     d "Actually, why don't I{nw}"
     show screen tear(20, 0.1, 0.1, 0, 32)
-    pause <1.0>
+    pause 1.0
     hide screen tear
     return
 
