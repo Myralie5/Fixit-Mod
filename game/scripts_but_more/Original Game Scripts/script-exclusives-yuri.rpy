@@ -1,6 +1,4 @@
 label yuri_exclusivex_1:
-    scene bg club_day
-    with wipeleft_scene
     "I'm really curious to talk to Yuri a little bit more..."
     "But at the same time, I would feel bad for distracting her from reading."
     "I catch a glimpse of the cover of her book."
@@ -207,8 +205,9 @@ label yuri_exclusivex_1:
     "That got very awkward very fast."
     "However,{nw}"
     show screen tear(20, 0.1, 0.1, 0, 32)
-    pause <0.25>
+    pause 0.25
     hide screen tear
+    show yuri 3n t11 at zorder 1
     y 3n "I..."
     y 3f "What... just happened?"
     show yuri at thide

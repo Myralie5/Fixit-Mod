@@ -1,6 +1,4 @@
 label natsuki_exclusive_1:
-    scene bg club_day
-    with wipeleft_scene
     n "Ugh...!"
     "I hear Natsuki utter an exasperated sigh from within the closet."
     "She seems to be annoyed by something."
@@ -230,7 +228,7 @@ label natsuki_exclusive_1:
     show natsuki 1s zorder 2 at t11
     mc "Wh-why don't we{nw}"
     show screen tear(20, 0.1, 0.1, 0, 32)
-    pause <0.25>
+    pause 0.25
     hide screen tear
     show natsuki 1p at h11
     n "Wh-what was that?"

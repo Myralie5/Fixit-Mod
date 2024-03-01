@@ -1,6 +1,4 @@
 label sayori_exclusivex_1:
-    scene bg club_day
-    with wipeleft_scene
     show screen tear(20, 0.1, 0.1, 0, 32)
     pause 0.25
     hide screen tear
