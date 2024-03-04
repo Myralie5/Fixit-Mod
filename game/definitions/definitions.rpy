@@ -1510,6 +1510,7 @@ default basedir = config.basedir
 default chapter = 0
 default currentpos = 0
 default faint_effect = None
+default unfinished = False
 
 # Default Name Variables
 # To define a default name make a character name variable like in this example:

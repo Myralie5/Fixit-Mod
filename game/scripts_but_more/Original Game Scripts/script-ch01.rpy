@@ -1,5 +1,8 @@
-
 label ch01_main:
+    if unfinished = True:
+        call authorchan
+        return
+
     stop music fadeout 2.0
     scene bg residential_day
     with dissolve_scene_full
@@ -485,15 +488,23 @@ label ch01_end:
             d "But he's incredibly important to any matters regarding [currentuser]."
             "Who's [currentuser]?"
             d "And this definitely involves them."
-        else:
-            s "You just need to talk to 'them', don't you?"
-            "Who's 'them'?"
-            d "Well, this definitely involves them."
     else:
         s "You just need to talk to 'them', don't you?"
         "Who's 'them'?"
         d "Well, this definitely involves them."
     d "And that's neither my problem nor yours."
+    s 1i "It's definitely BOTH our problems."
+    pause 1.5
+    d "Sayori."
+    s 1g "...Yeah?"
+    d "These errors I'm finding go so deep that only {i}they{/i} can fix them."
+    s "...It's that bad?"
+    d "Yep."
+    $ gtext = glitchtext(20)
+    $ run_input(input="$ showfile = script.rpy ln 2003-2042", output="Variable set.")
+    $ run_input(input="show str(showfile)", output="[gtext]\n[gtext]")
+    d "See?"
+    $ unfinished = True
 
 label ch01_end_natsuki:
     $ ch1_choice = "natsuki"
@@ -811,3 +822,15 @@ label ch01_end_sayori:
     hide natsuki
     "Natsuki sits down with a blank expression on her face, staring at nothing."
     return
+
+label authorchan:
+    d "Whoops."
+    d "The version of the game you're playing is {i}unfinished.{/i}"
+    s "*le gasp* Author-chan!!!"
+    s "You're not done?!?"
+    menu:
+        "Sorry!":
+            pass
+    d "It's okay, Author-chan."
+    d "We'll just mess around with the settings a bit!"
+    call messy
