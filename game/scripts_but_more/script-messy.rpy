@@ -8,5 +8,5 @@ label messy:
     show monika 1 at t22 zorder 1
     m "Author-kun?"
     python:
-        renpy.call_screen("dialog", message="Be done now.", ok_action=jump Main_Menu())
+        renpy.call_screen("dialog", message="Be done now.", ok_action=jump main_menu())
     $ MainMenu(confirm=False)()
