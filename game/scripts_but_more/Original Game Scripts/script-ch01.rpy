@@ -1,5 +1,5 @@
 label ch01_main:
-    if unfinished = True:
+    if unfinished == True:
         call authorchan
         return
 
