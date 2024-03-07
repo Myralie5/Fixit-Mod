@@ -828,6 +828,7 @@ label ch01_end_sayori:
 label authorchan:
     d "Whoops."
     d "The version of the game you're playing is {i}unfinished.{/i}"
+    show sayori 1 at t11
     s "*le gasp* Author-chan!!!"
     s "You're not done?!?"
     menu:
