@@ -505,6 +505,8 @@ label ch01_end:
     $ run_input(input="show str(showfile)", output="[gtext]\n[gtext]")
     d "See?"
     $ unfinished = True
+    call authorchan
+    return
 
 label ch01_end_natsuki:
     $ ch1_choice = "natsuki"

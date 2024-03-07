@@ -711,7 +711,7 @@ style sayori_text:
 
 style monika_text:
     font "gui/font/m1.ttf"
-    size 46
+    size 24
     color "#000"
     outlines []
 
