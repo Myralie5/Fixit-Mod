@@ -1427,6 +1427,82 @@ image monika g2:
             pause 0.2
     repeat
 
+##Gwynn defs - keep hashed till you have the actual assets (1a-4f)
+
+##default 1a-1m
+#image gwynn 1 = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1a.png")
+#image gwynn 1a = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1a.png")
+#image gwynn 1b = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1b.png")
+#image gwynn 1c = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1c.png")
+#image gwynn 1d = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1d.png")
+#image gwynn 1e = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1e.png")
+#image gwynn 1f = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1f.png")
+#image gwynn 1g = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1g.png")
+#image gwynn 1h = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1h.png")
+#image gwynn 1i = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1i.png")
+#image gwynn 1j = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1j.png")
+#image gwynn 1k = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1k.png")
+#image gwynn 1l = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1l.png")
+#image gwynn 1m = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1m.png")
+
+##blush sprites 1ba-1bg
+#image gwynn 1ba = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1ba.png")
+#image gwynn 1bb = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bb.png")
+#image gwynn 1bc = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bc.png")
+#image gwynn 1bd = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1ba.png")
+#image gwynn 1be = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bb.png")
+#image gwynn 1bf = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bc.png")
+#image gwynn 1bg = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1ba.png")
+
+##yandere 1ya-1ybc
+#image gwynn 1ya = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bb.png")
+#image gwynn 1yb = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bc.png")
+#image gwynn 1yc = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1ba.png")
+#image gwynn 1yba = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bb.png")
+#image gwynn 1ybb = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bc.png")
+#image gwynn 1ybc = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1ba.png")
+
+##pointing 2a-2m
+#image gwynn 2 = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2a.png")
+#image gwynn 2a = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2a.png")
+#image gwynn 2b = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2b.png")
+#image gwynn 2c = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2c.png")
+#image gwynn 2d = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2d.png")
+#image gwynn 2e = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2e.png")
+#image gwynn 2f = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2f.png")
+#image gwynn 2g = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2g.png")
+#image gwynn 2h = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2h.png")
+#image gwynn 2i = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2i.png")
+#image gwynn 2j = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2j.png")
+#image gwynn 2k = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2k.png")
+#image gwynn 2l = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2l.png")
+#image gwynn 2m = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/2m.png")
+
+##blush sprites 2ba-2bg
+#image gwynn 2ba = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1ba.png")
+#image gwynn 2bb = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bb.png")
+#image gwynn 2bc = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bc.png")
+#image gwynn 2bd = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1ba.png")
+#image gwynn 2be = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bb.png")
+#image gwynn 2bf = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1bc.png")
+#image gwynn 2bg = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/1ba.png")
+
+##knife 3a-4f
+#image gwynn 3 = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/3a.png")
+#image gwynn 3a = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/3a.png")
+#image gwynn 3b = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/3b.png")
+#image gwynn 3c = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/3c.png")
+#image gwynn 3d = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/3d.png")
+#image gwynn 3e = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/3e.png")
+#image gwynn 3f = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/3f.png")
+#image gwynn 4 = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/4a.png")
+#image gwynn 4a = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/4a.png")
+#image gwynn 4b = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/4b.png")
+#image gwynn 4c = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/4c.png")
+#image gwynn 4d = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/4d.png")
+#image gwynn 4e = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/4e.png")
+#image gwynn 4f = im.Composite((960, 960), (0, 0), "mod_assets/gwynn/4f.png")
+
 ## Character Variables
 # This is where the characters are declared in the mod.
 # To define a new character with assets, declare a character variable like in this example:
@@ -1441,7 +1517,7 @@ define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suff
 define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define d = DynamicCharacter('d_name', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define d = DynamicCharacter('d_name', image='gwynn' what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 # This variable determines whether to allow the player to dismiss pauses.
 # By default this is set by config.developer which is normally set to false

@@ -1,3 +1,6 @@
+image fake_exception = Text("An exception has occurred.", size=40, style="_default")
+image fake_exception2 = Text("File \"game/selfdiagnosic.rpy\", line 2\nSee traceback.txt for details.", size=20, style="_default")
+
 label messy:
     stop music fadeout 2.0
     scene bg residential_day
