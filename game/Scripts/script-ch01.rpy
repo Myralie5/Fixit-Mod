@@ -508,6 +508,8 @@ label ch01_end:
     $ run_input(input="$ showfile = script.rpy ln 2003-2042", output="Variable set.")
     $ run_input(input="show str(showfile)", output="[gtext]\n[gtext]")
     d "See?"
+    d "And worse, the script is constantly trying to call new characters that don't exist or have assets."
+    d "And that's not even {i}starting{/i} on the third-party edits..."
     $ unfinished = True
     call authorchan
     return

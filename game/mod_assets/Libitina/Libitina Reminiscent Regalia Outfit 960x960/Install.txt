@@ -1,0 +1,6 @@
+# Installation
+
+Copy 'gov.sdc.libitina_gh' to your mod_assets folder and copy 'libitina_regalia_definitions.sdc64.rpy' somewhere in your game folder.
+
+For MPT/ExP: Copy 'gov.sdc.libitina_exp' to your mod_assets folder and copy 'libitina_layeredimage.rpy' to your game folder.
+If you already have a modified Libitina MPT/ExP file, just copy the 'attribute regalia' stuff to your file.

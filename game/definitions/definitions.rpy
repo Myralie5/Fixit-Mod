@@ -885,7 +885,7 @@ image natsuki 5 = im.Composite((960, 960), (18, 22), "natsuki/1t.png", (0, 0), "
 
 # This image shows the realistic mouth on Natsuki on a random playthrough
 # of Act 2.
-image natsuki mouth = LiveComposite((960, 960), (0, 0), "natsuki/0.png", (390, 340), "n_rects_mouth", (480, 334), "n_rects_mouth")
+#image natsuki mouth = LiveComposite((960, 960), (0, 0), "natsuki/0.png", (390, 340), "n_rects_mouth", (480, 334), "n_rects_mouth")
 
 # This image shows black rectangles on Natsuki on a random playthrough
 # of Act 2.
@@ -1226,12 +1226,12 @@ image yuri stab_6_eyes:
 
 # These images shows Yuri with a offcenter right eye moving slowing away
 # from her face.
-image yuri oneeye = LiveComposite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/oneeye.png", (0, 0), "yuri oneeye2")
-image yuri oneeye2:
-    "yuri/oneeye2.png"
-    subpixel True
-    pause 5.0
-    linear 60 xoffset -50 yoffset 20
+#image yuri oneeye = LiveComposite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/oneeye.png", (0, 0), "yuri oneeye2")
+#image yuri oneeye2:
+#    "yuri/oneeye2.png"
+#    subpixel True
+#    pause 5.0
+#    linear 60 xoffset -50 yoffset 20
 
 # These images show a glitched Yuri during Act 2.
 image yuri glitch:
@@ -1258,15 +1258,15 @@ image yuri glitch2:
     "yuri 1"
 
 # These image declarations show Yuri's moving eyes in Act 2.
-image yuri eyes = LiveComposite((1280, 720), (0, 0), "yuri/eyes1.png", (0, 0), "yuripupils")
+#image yuri eyes = LiveComposite((1280, 720), (0, 0), "yuri/eyes1.png", (0, 0), "yuripupils")
 
 # This image shows the base of Yuri's sprite as her eyes move.
-image yuri eyes_base = "yuri/eyes1.png"
+#image yuri eyes_base = "yuri/eyes1.png"
 
 # This image shows Yuri's realistic moving eyes during Act 2.
-image yuripupils:
-    "yuri/eyes2.png"
-    yuripupils_move
+#image yuripupils:
+#    "yuri/eyes2.png"
+#    yuripupils_move
 
 image yuri cuts = "yuri/cuts.png"
 
@@ -1511,13 +1511,14 @@ image monika g2:
 #   define en = Character('Eileen & Nat', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 define narrator = Character(ctc="ctc", ctc_position="fixed")
-define mc = DynamicCharacter('player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define mc = DynamicCharacter('player', image='player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define d = DynamicCharacter('d_name', image='gwynn' what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define l = DynamicCharacter('l_name', image='libitina' what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 # This variable determines whether to allow the player to dismiss pauses.
 # By default this is set by config.developer which is normally set to false

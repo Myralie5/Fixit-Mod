@@ -2,3 +2,8 @@ copy shtuff
     show sayori 1a at t11 zorder 1
     show sayori 1a at f11 zorder 2
 "end playtest"
+    python:
+        with open(basedir+'/WTF.txt', 'w') as f:
+            f.write( + " what the fuck is this static" + glitchtext(40) +
+                "it hurts like hell!" + glitchtext(40) +
+                "omg help me" + glitchtext(40) + "help me help me help me")
