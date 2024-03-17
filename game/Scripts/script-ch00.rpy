@@ -44,92 +44,95 @@ label ch0_main:
     scene bg club_day
     with wipeleft_scene
 
-    show sayori 1b zorder 2 at f11
+    show sayori turned curi om zorder 2 at f11
     s "[player]?"
     "This is Sayori, a childhood friend of mine."
     "She did say she was starting a new club..."
     "This must be the product of her efforts."
     s "Why are you here?"
-    show sayori 1b zorder 1 at t11
+    show sayori cm zorder 1 at t11
     mc "I... um... got lost and wound up here."
-    show sayori 1b zorder 1 at t32
-    show natsuki 3g zorder 2 at f31
+    show natsuki turned lhip anno om zorder 2 at f31
     "Another girl comes up to me."
     n "Sayori, who's this?"
-    show natsuki 3g zorder 2 at t31
-    show yuri 3f zorder 2 at f33
+    show natsuki cm zorder 2 at t31
+    show yuri turned curi rup lup om zorder 2 at f33
     y "Is he... a new member?"
-    show yuri 3e zorder 1 at t33
+    show yuri cm zorder 1 at t33
     mc "I-I just got lost, I swear!"
     mc "Is this your club, Sayo?"
-    show sayori 4r zorder 2 at f32
+    show sayori rup lup happ ce om zorder 2 at f32
     s "Yeah!"
-    s 1a "It's the Literature club."
+    $ sref()
+    s "It's the Literature club."
     s "It functions a little like a book club."
     s "The girl to my left is Yuri, and the girl to my right is Natsuki."
     $ y_name = "Yuri"
     $ n_name = "Natsuki"
-    show sayori 1a zorder 1 at t32
+    $ sref()
+    show sayori zorder 1 at t32
     mc "Hmm..."
     mc "Can I join?"
-    show sayori 4c zorder 2 at f32
-    show natsuki 1k zorder 1 at t31
-    show yuri 3f zorder 1 at t33
-    s 1a "Of course, [player]!"
-    show natsuki 5g zorder 1 at t31
-    show yuri 1a zorder 1 at t33
-    s 4r "That would be awesome!"
-    s 1c "Now we have enough people to become an official club!"
+    show sayori zorder 2 at f32
+    $ nref()
+    show natsuki om lsur zorder 1 at t31
+    show yuri om lsur zorder 1 at t33
+    s "Of course, [player]!"
+    show natsuki cross anno zorder 1 at t31
+    $ yref()
+    s ce happ om lup rup "That would be awesome!"
+    s neut om rdown ldown "Now we have enough people to become an official club!"
     s "We have a while left until we have to leave."
     s "Do you want to talk about anything?"
-    show sayori 1a zorder 1 at t32
+    show sayori cm zorder 1 at t32
     mc "Well, how about a book recommendation?"
-    show yuri 1d zorder 2 at f33
+    show yuri happ ce om zorder 2 at f33
     y "I have a recommendation, if you'd be willing to hear it."
-    show yuri 1d zorder 1 at t33
+    show yuri cm zorder 1 at t33
     mc "By all means, go ahead, Yuri."
-    show yuri 2b zorder 2 at f33
-    y 2b "I read a book recently called Portrait of Markov."
-    y 2k "It's somewhat dark, being classified as a quasi-horror novel, but it's quite interesting."
-    show yuri 2a zorder 1 at t33
+    show yuri rup neut om oe zorder 2 at f33
+    y "I read a book recently called Portrait of Markov."
+    y mg ce "It's somewhat dark, being classified as a quasi-horror novel, but it's quite interesting."
+    $ yref()
+    show yuri rup zorder 1 at t33
     mc "What about you, Natsuki?"
-    show natsuki 5b zorder 2 at f31
+    show natsuki cross neut om zorder 2 at f31
     n "My recommendation would probably be a manga."
     n "Those are probably the number one things I read."
-    n 5q "U-unless, of course, you don't l-like manga..."
-    show natsuki 5s zorder 1 at t31
-    show sayori 1c zorder 2 at f32
+    n blaw e2b b1e "U-unless, of course, you don't l-like manga..."
+    show natsuki cm zorder 1 at t31
+    show sayori om zorder 2 at f32
     s "Okay everyone--"
-    show sayori 4m zorder 1 at t32
-    show natsuki 1p zorder 1 at t31
-    show yuri 3p zorder 1 at t33
+    show sayori flus ml awkw zorder 1 at t32
+    show natsuki blaw rdown ldown ml b1d e2a zorder 1 at t31
+    show yuri lsur ml zorder 1 at t33
     stop music
     "Sayori instantly covers her mouth."
     "Natsuki and Yuri wince, and then seem to wonder why they did."
     "I get this strange sense of deja vu, like someone else said that once... someone I didn't like."
     d "Oh my. First time and she already slipped up."
-    show sayori 4m zorder 2 at f32
+    show sayori zorder 2 at f32
     s "I-I mean, alright everyone!"
     play music t3
-    show yuri 3l zorder 1 at t33
-    show natsuki 1i zorder 1 at t31
+    show yuri dist om ce zorder 1 at t33
+    show natsuki neut b1d blaw zorder 1 at t31
     s "Why don't we do something collaborative and fun to get to know each other more?"
     s "Like... write poems!"
-    show natsuki 5s zorder 2 at f31
+    show natsuki om zorder 2 at f31
     n "How is poetry collaborative?"
-    show natsuki 5s zorder 1 at t31
-    show sayori 1r zorder 2 at f32
+    show natsuki cm zorder 1 at t31
+    show sayori happ om ce zorder 2 at f32
     s "If we share it after."
-    show sayori 1r zorder 1 at t32 
-    show yuri 3n zorder 2 at f33
+    show sayori cm zorder 1 at t32 
+    show yuri flus om e2a zorder 2 at f33
     y "Sh-share?!?"
-    show yuri 3n zorder 1 at t33
+    show yuri cm zorder 1 at t33
     "Seems this Yuri's rather self-concious."
-    show sayori 1c zorder 2 at f32
+    show sayori neut om zorder 2 at f32
     s "Don't worry, this is a strict no-judgement zone."
-    show yuri 4b zorder 1 at t33
+    show yuri shy neut zorder 1 at t33
     s "Well, everyone, I think this meeting's over. Don't forget to write a poem tonight!"
-    show sayori 1c zorder 1 at t32
+    show sayori zorder 1 at t32
     "Natsuki and Yuri leave the club."
     play music t2
     show yuri at thide
