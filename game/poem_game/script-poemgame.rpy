@@ -298,16 +298,21 @@ label poem(transition=True):
         scene bg notebook
     
     if persistent.playthrough == 9: 
-        show m_sticker at sticker_mid #Just Monika.
+        show m_sticker at sticker_mid 
+        #Just Monika.
     else:
         show s_sticker at sticker_left
-        show n_sticker at sticker_mid #Natsuki's sticker
+        show n_sticker at sticker_mid 
+        #Natsuki's sticker
         if persistent.playthrough == 9 and chapter == 2:
-            show y_sticker_cut at sticker_right #Replace Yuri's sticker with the "cut arms" sticker..
+            show y_sticker_cut at sticker_right 
+            #Replace Yuri's sticker with the "cut arms" sticker..
         else:
-            show y_sticker at sticker_right #Yuri's sticker
+            show y_sticker at sticker_right 
+            #Yuri's sticker
         if persistent.playthrough == 9 and chapter == 2:
-            show m_sticker at sticker_m_glitch #Monika's sticker
+            show m_sticker at sticker_m_glitch 
+            #Monika's sticker
         
     if transition:
         with dissolve_scene_full
@@ -487,6 +492,24 @@ image y_sticker glitch:
         parallel:
             function chibi_y.randomMoveTime
         repeat
+
+image g_sticker:
+    "mod_asssets/Gwynn Sprites/overall/g_sticker.png"
+    xoffset chibi_s.charOffset xzoom chibi_s.charZoom
+    block:
+        function chibi_s.randomPauseTime
+        parallel:
+            sticker_move_n
+        parallel:
+            function chibi_s.randomMoveTime
+        repeat
+
+image g_sticker hop:
+    "mod_assets/Gwynn Sprites/overall/g_sticker_2.png"
+    xoffset chibi_m.charOffset xzoom chibi_m.charZoom
+    sticker_hop
+    xoffset 0 xzoom 1
+    "m_sticker"
 
 transform sticker_left:
     xcenter 100 yalign 0.9 subpixel True

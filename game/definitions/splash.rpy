@@ -63,7 +63,10 @@ image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign
 
 # This image shows the DDLC logo in the normal DDLC position.
 image menu_logo:
-    "mod_assets/DDLCModTemplateLogo.png"
+    if random.randint(0,2) == 0:
+        "mod_assets/Gwynn Sprites/overall/Logo2.png"
+    else:
+        "mod_assets/Gwynn Sprites/overall/Logo.png"
     # im.Composite((512, 512), (0, 0), recolorize("mod_assets/logo_bg.png"), (0, 0), "mod_assets/logo_fg.png")
     subpixel True
     xcenter 240
@@ -341,10 +344,10 @@ label splashscreen:
 
     if renpy.version_tuple == (6, 99, 12, 4, 2187) and not renpy.get_autoreload():
         if os.path.exists(config.gamedir + "/definitions/splash.rpy"):
-            "{b}Warning:{/b} You are running the DDLC Mod Template on a version of Ren'Py that may be depreciated in the near future."
-            "Mod Template development has been focused to support DDLC on either Ren'Py 7 and Ren'Py 8."
-            "While this template supports the current Ren'Py version, this may not be the case in the near future."
-            "It is highly recommended that you upgrade to Ren'Py 7 to continue mod development. More information can be found [here](https://www.reddit.com/r/DDLCMods/wiki/notices/#wiki_why_is_the_megathread_and_other_users_recommending_me_to_create_my_mod_in_ren.27py_7.3F)."
+            "{b}Warning:{/b} You are running Afterword on a version of Ren'Py that may be depreciated in the near future."
+            "Afterword development has been focused to support DDLC on either Ren'Py 7 or Ren'Py 8."
+            "While it supports the current Ren'Py version, this may not be the case in the near future."
+            "It is highly recommended that you upgrade to Ren'Py 7-8 to continue mod development. More information can be found [here](https://www.reddit.com/r/DDLCMods/wiki/notices/#wiki_why_is_the_megathread_and_other_users_recommending_me_to_create_my_mod_in_ren.27py_7.3F)."
             window hide
             pause 1.0
             window auto
@@ -380,9 +383,29 @@ label splashscreen:
         "Game files for Doki Doki Literature Club are required to play this mod and can be downloaded for free at: https://ddlc.moe or on Steam."
 
         menu:
-            "By playing [config.name] you agree that you have completed Doki Doki Literature Club and accept any spoilers contained within."
+            "By playing [config.name] you agree that you have completed Doki Doki Literature Club and accept certain... spoilers contained within."
             "I agree.":
+                "Good."
+        
+        "Oh, and I guess I should warn you..."
+        "This mod has a bunch of file secrets referenced."
+        "You can find them easily on the DDLC wiki."
+        "Specifically, the Easter Eggs page, Natsu's poems, and Yuri's poems."
+        "Look for weird poems in the poems pages, and you've gotten to where you need to be."
+
+        menu:
+            "Have you found them?"
+            "Yes":
+                "Cool."
+
+        "Your original playthrough of DDLC has no particular effect here, unless you choose it to, e.g. trying to recreate your original coices, et cetera."
+        "One last question..."
+        
+        menu:
+            "Are you ready?"
+            "Yes":
                 pass
+
 
         $ persistent.first_run = True
         scene tos2

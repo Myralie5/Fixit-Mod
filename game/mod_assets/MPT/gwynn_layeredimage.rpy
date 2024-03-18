@@ -1,4 +1,5 @@
 layeredimage gwynn forward: #All definitions are for her facing forward.
+    at Flatten
 
     group mood: #Mood determines what the defaults images are for the following attributes:
         #"oe", "ce", "om", "cm", "brow".
