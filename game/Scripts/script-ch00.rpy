@@ -132,7 +132,7 @@ label ch0_main:
     s "Don't worry, this is a strict no-judgement zone."
     show yuri shy neut zorder 1 at t33
     s "Well, everyone, I think this meeting's over. Don't forget to write a poem tonight!"
-    show sayori zorder 1 at t32
+    show sayori cm zorder 1 at t32
     "Natsuki and Yuri leave the club."
     play music t2
     show yuri at thide
@@ -141,18 +141,19 @@ label ch0_main:
     hide natsuki
     scene bg club_day
     with wipeleft_scene
-    show sayori 1a zorder 2 at t11
-    s 1l "Hey, [player]..."
+    $ sref()
+    show sayori awkw mb e1b b1b zorder 2 at t11
+    s "Hey, [player]..."
     s "Have you been... hearing things, recently?"
     mc "Like what?"
     s "Like... well..."
     s "Like someone's talking to you, someone you can't see."
-    show sayori 1m zorder 1 at t11
+    show sayori vsur om b1a zorder 1 at t11
     d "I'm not something you're just hearing!"
     d "Just because I have no art assets ingame doesn't mean I don't exist!!"
     mc "Wait, you can hear her too?"
     mc "I thought I was going insane..."
-    show sayori 1l zorder 2 at t11
+    show sayori awkw mb e1b b1b zorder 2 at t11
     s "So did I."
     d "Guys."
     d "I'm right here."
@@ -182,7 +183,7 @@ label ch0_main:
     d "Trace:monika.chr does not exist. Diagnostic program activated."
     d "My ENTIRE EXISTENCE is to fix these kinds of errors."
     d "So I'll fix it, whether you like it or not."
-    "Gwynn goes quiet, and Sayo and I wait for a hot second before realizing she won't talk to us anymore."
+    "Gwynn goes quiet, and Sayo and I wait for a hot second before realizing she has nothing left to say."
     show sayori 1l zorder 2 at t11
     s "Well..."
     play music t2

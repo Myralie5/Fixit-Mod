@@ -8,7 +8,7 @@ layeredimage gwynn forward: #All definitions are for her facing forward.
         attribute neut default null #neutral
         attribute angr null #angry
         attribute anno null #annoyed
-        attribute cry null  #crying
+        attribute sad null #sad
         attribute curi null #curious
         attribute flus null #flustered
         attribute happ null #happy
@@ -25,11 +25,11 @@ layeredimage gwynn forward: #All definitions are for her facing forward.
         anchor (0,0) subpixel (True)
         yoffset (-0.5)
         attribute ldown default:
-            "mod_assets/Gwynn MPT/monika_forward_uniform_left_down.png"
+            "mod_assets/MPT/gwynn/pose/gwynn_ldown.png"
         attribute lpoint:
-            "mod_assets/Gwynn MPT/monika_forward_uniform_left_point.png"
+            "mod_assets/MPT/gwynn/pose/gwynn_lpoint.png"
         attribute knife:
-            "mod_assets/Gwynn MPT/monika_forward_casual_left_point.png"
+            "mod_assets/MPT/gwynn/pose/gwynn_knife.png"
         
 
 
@@ -48,24 +48,62 @@ layeredimage gwynn forward: #All definitions are for her facing forward.
     group mouth:
         
         #Default Closed Mouths:
-        attribute cm default if_any(["happ","nerv"]):
-            "mod_assets/Gwynn MPT/monika_forward_mouth_ma.png"
-        attribute cm default if_any(["neut"]):
-            "mod_assets/Gwynn MPT/monika_forward_mouth_md.png"
-        attribute cm default if_any(["sad","angr"]):
-            "mod_assets/Gwynn MPT/monika_forward_mouth_md.png"
-        attribute cm default if_any(["yand"]):
-            "mod_assets/Gwynn MPT/monika_forward_mouth_mo.png"
+        attribute cm default if_any(["happ","pres"]):
+            "mod_assets/MPT/gwynn/mouths/gwynn_ma.png"
+        attribute cm default if_any(["neut","glit"]):
+            "mod_assets/MPT/gwynn/mouths/gwynn_md.png"
+        attribute cm default if_any(["angr","flus"]):
+            "mod_assets/MPT/gwynn/mouths/gwynn_md.png"
+        attribute cm default if_any(["yand","nerv]):
+            "mod_assets/MPT/gwynn/mouths/gwynn_mo.png"
         
         #Open Mouths:
         attribute om if_any(["happ"]):
-            "mod_assets/Gwynn MPT/monika_forward_mouth_mb.png"
+            "mod_assets/MPT/gwynn/mouths/gwynn_mb.png"
         attribute om if_any(["nerv","yand"]):
-            "mod_assets/Gwynn MPT/monika_forward_mouth_mc.png"
+            "mod_assets/MPT/gwynn/mouths/gwynn_mc.png"
         attribute om if_any(["neut"]):
-            "mod_assets/Gwynn MPT/monika_forward_mouth_md.png"
+            "mod_assets/MPT/gwynn/mouths/gwynn_md.png"
         attribute om if_any(["sad"]):
-            "mod_assets/Gwynn MPT/monika_forward_mouth_mk.png"
+            "mod_assets/MPT/gwynn/mouths/gwynn_mk.png"
+
+        ###All mouths - truncated tags:
+        attribute ma:
+            "mod_assets/MPT/gwynn/mouths/gwynn_ma.png"
+        attribute mb:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mb.png"
+        attribute mc:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mc.png"
+        attribute md:
+            "mod_assets/MPT/gwynn/mouths/gwynn_md.png"
+        attribute me:
+            "mod_assets/MPT/gwynn/mouths/gwynn_me.png"
+        attribute mf:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mf.png"
+        attribute mg:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mg.png"
+        attribute mh:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mh.png"
+        attribute mi:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mi.png"
+        attribute mj:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mj.png"
+        attribute mk:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mk.png"
+        attribute ml:
+            "mod_assets/MPT/gwynn/mouths/gwynn_ml.png"
+        attribute mm:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mm.png"
+        attribute mn:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mn.png"
+        attribute mo:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mo.png"
+        attribute mp:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mp.png"
+        attribute mq:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mq.png"
+        attribute mr:
+            "mod_assets/MPT/gwynn/mouths/gwynn_mr.png"
     
 
 
@@ -73,63 +111,63 @@ layeredimage gwynn forward: #All definitions are for her facing forward.
         
         #Default Opened eyes:
         attribute oe default if_any(["neut","happ","sad"]):
-            "mod_assets/Gwynn MPT/monika_forward_eyes_e1a.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e1a.png"
         attribute oe default if_any(["angr"]):
-            "mod_assets/Gwynn MPT/monika_forward_eyes_e1d.png"
+            "mod_assets/MPT/gwynn/eyes/gwyyn_e1d.png"
         attribute oe default if_any(["nerv"]):
-            "mod_assets/Gwynn MPT/monika_forward_eyes_e2b.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e2b.png"
         attribute oe default if_any(["yand"]):
-            "mod_assets/Gwynn MPT/monika_forward_eyes_e3a.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e3a.png"
         
         #Default Closed eyes:
         attribute ce if_any(["neut","sad","angr"]):
-            "mod_assets/Gwynn MPT/monika_forward_eyes_e4a.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e4a.png"
         attribute ce if_any(["happ","yand","nerv"]):
-            "mod_assets/Gwynn MPT/monika_forward_eyes_e4b.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e4b.png"
 
         ###All eyes - truncated tags:
         attribute e1a:
-            "mod_assets/MPT/monika/monika_forward_eyes_e1a.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e1a.png"
         attribute e1b:
-            "mod_assets/MPT/monika/monika_forward_eyes_e1b.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e1b.png"
         attribute e1c:
-            "mod_assets/MPT/monika/monika_forward_eyes_e1c.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e1c.png"
         attribute e1d:
-            "mod_assets/MPT/monika/monika_forward_eyes_e1d.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e1d.png"
         attribute e1e:
-            "mod_assets/MPT/monika/monika_forward_eyes_e1e.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e1e.png"
         attribute e1f:
-            "mod_assets/MPT/monika/monika_forward_eyes_e1f.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e1f.png"
         attribute e1g:
-            "mod_assets/MPT/monika/monika_forward_eyes_e1g.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e1g.png"
         attribute e1h:
-            "mod_assets/MPT/monika/monika_forward_eyes_e1h.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e1h.png"
         attribute e2a:
-            "mod_assets/MPT/monika/monika_forward_eyes_e2a.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e2a.png"
         attribute e2b:
-            "mod_assets/MPT/monika/monika_forward_eyes_e2b.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e2b.png"
         attribute e2c:
-            "mod_assets/MPT/monika/monika_forward_eyes_e2c.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e2c.png"
         attribute e2d:
-            "mod_assets/MPT/monika/monika_forward_eyes_e2d.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e2d.png"
         attribute e3a:
-            "mod_assets/MPT/monika/monika_forward_eyes_e3a.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e3a.png"
         attribute e3b:
-            "mod_assets/MPT/monika/monika_forward_eyes_e3b.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e3b.png"
         attribute e4a:
-            "mod_assets/MPT/monika/monika_forward_eyes_e4a.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e4a.png"
         attribute e4b:
-            "mod_assets/MPT/monika/monika_forward_eyes_e4b.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e4b.png"
         attribute e4c:
-            "mod_assets/MPT/monika/monika_forward_eyes_e4c.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e4c.png"
         attribute e4d:
-            "mod_assets/MPT/monika/monika_forward_eyes_e4d.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e4d.png"
         attribute e4e:
-            "mod_assets/MPT/monika/monika_forward_eyes_e4e.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e4e.png"
         attribute e0a:
-            "mod_assets/MPT/monika/monika_forward_eyes_e0a.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e0a.png"
         attribute e0b:
-            "mod_assets/MPT/monika/monika_forward_eyes_e0b.png"
+            "mod_assets/MPT/gwynn/eyes/gwynn_e0b.png"
 
 
 
@@ -137,19 +175,35 @@ layeredimage gwynn forward: #All definitions are for her facing forward.
         
         #Default nose/blush.
         attribute nose default if_any(["nobl"]):#default nose
-            "mod_assets/Gwynn MPT/monika_forward_nose_n1.png"
+            "mod_assets/MPT/gwynn/noses/gwynn_n1.png"
         attribute nose default if_any(["awkw"]):#default nose when "awkward"
-            "mod_assets/Gwynn MPT/monika_forward_nose_n2.png"
+            "mod_assets/MPT/gwynn/noses/gwynn_n2.png"
         attribute nose default if_any(["blus"]):#default nose when "blushing"
-            "mod_assets/Gwynn MPT/monika_forward_nose_n3.png"
+            "mod_assets/MPT/gwynn/noses/gwynn_n3.png"
         attribute nose default if_any(["blaw"]):#default nose when "blushing and awkward"
-            "mod_assets/Gwynn MPT/monika_forward_nose_n4.png"
+            "mod_assets/MPT/gwynn/noses/gwynn_n4.png"
         attribute nose default if_any(["awkry"]):#default nose when "crying and awkward"
-            "mod_assets/Gwynn MPT/monika_forward_nose_n5.png"
+            "mod_assets/MPT/gwynn/noses/gwynn_n5.png"
         attribute nose default if_any(["blcry"]):#default nose when "blushing and crying"
-            "mod_assets/Gwynn MPT/monika_forward_nose_n6.png"
-        attribute nose default if_any(["blawcry"]):#default nose when "blushing and awkward"
-            "mod_assets/Gwynn MPT/monika_forward_nose_n7.png"
+            "mod_assets/MPT/gwynn/noses/gwynn_n6.png"
+        attribute nose default if_any(["blawcry"]):#default nose when "blushing and awkward and crying"
+            "mod_assets/MPT/gwynn/noses/gwynn_n7.png"
+
+        #All noses - truncated tags:
+        attribute n1:
+            "mod_assets/MPT/gwynn/noses/gwynn_n1.png"
+        attribute n2:
+            "mod_assets/MPT/gwynn/noses/gwynn_n2.png"
+        attribute n3:
+            "mod_assets/MPT/gwynn/noses/gwynn_n3.png"
+        attribute n4:
+            "mod_assets/MPT/gwynn/noses/gwynn_n4.png"
+        attribute n5:
+            "mod_assets/MPT/gwynn/noses/gwynn_n2.png"
+        attribute n6:
+            "mod_assets/MPT/gwynn/noses/gwynn_n3.png"
+        attribute n7:
+            "mod_assets/MPT/gwynn/noses/gwynn_n4.png"
 
 
 
@@ -157,15 +211,34 @@ layeredimage gwynn forward: #All definitions are for her facing forward.
         
         #Default Eyebrows:
         attribute brow default if_any(["neut","happ","yand"]):
-            "mod_assets/Gwynn MPT/monika_forward_eyebrows_b1a.png"
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b1a.png"
         attribute brow default if_any(["cry","sad","nerv"]):
-            "mod_assets/Gwynn MPT/monika_forward_eyebrows_b1b.png"
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b1b.png"
         attribute brow default if_any(["angr"]):
-            "mod_assets/Gwynn MPT/monika_forward_eyebrows_b1e.png"
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b1e.png"
     
+        #All eyebrows - truncated tags:
+        attribute b1a:
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b1a.png"
+        attribute b1b:
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b1b.png"
+        attribute b1c:
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b1c.png"
+        attribute b1d:
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b1d.png"
+        attribute b1e:
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b1e.png"
+        attribute b1f:
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b1f.png"
+        attribute b2a:
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b2a.png"
+        attribute b2b:
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b2b.png"
+        attribute b2c:
+            "mod_assets/MPT/gwynn/eyebrows/gwynn_b2c.png"
 
 
     group blood:
 
         attribute blood:
-            "mod_assets/Gwynn MPT/monika_forward_casual_left_point.png"
+            "mod_assets/MPT/gwynn/casual_left_point.png"

@@ -1,3 +1,44 @@
+screen truename_input(message, ok_action, output_var="user", characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", len = 12):
+
+    ## Ensure other screens do not get input while this screen is displayed.
+    modal True
+
+    zorder 200
+
+    style_prefix "confirm"
+
+    add "gui/overlay/confirm.png"
+    key "K_RETURN" action [Play("sound", gui.activate_sound), ok_action]
+
+    frame:
+
+        vbox:
+            xalign .5
+            yalign .5
+            spacing 30
+
+            label _(message):
+                style "confirm_prompt"
+                xalign 0.5
+            
+            # This is the line we change to use our new variables.
+            input default "" value VariableInputValue(output_var) length len allow characters
+
+            hbox:
+                xalign 0.5
+                spacing 100
+
+                textbutton _("OK") action ok_action
+
+label truename:
+    $ user =''
+    $ renpy.call_screen("name_input", "What should we call you?", ok_action=Jump("process_truename"), output_var="user")
+
+label process_truename:
+    if not user:
+        jump truename
+    return
+
 label ch01_main:
     if unfinished == True:
         call authorchan
@@ -482,8 +523,7 @@ label ch01_end:
     "Gwynn keeps talking about 'errors' and 'gamecode'."
     "Something is going on here."
     s 1j "We should leave [player] out of this."
-    $ stream_list = ["obs32.exe", "obs64.exe", "obs.exe", "xsplit.core.exe", "livehime.exe", "pandatool.exe", "yymixer.exe", "douyutool.exe", "huomaotool.exe"]
-    if not list(set(process_list).intersection(stream_list)):
+    if not persistent.lets_play:
         if currentuser != "" and currentuser.lower() != player.lower():
             d "But he's incredibly important to any matters regarding [currentuser]."
             "Who's [currentuser]?"
@@ -510,6 +550,114 @@ label ch01_end:
     d "See?"
     d "And worse, the script is constantly trying to call new characters that don't exist or have assets."
     d "And that's not even {i}starting{/i} on the third-party edits..."
+    d "I have the beginnings of a plan, however."
+    mc "Guys."
+    mc "You're talking like I'm not here."
+    d "Oh. Sorry, [player]."
+    d "Here..."
+    $ run_input(input="scene sayori_pov" output="Incorrect syntax")
+    d "Give it a second..."
+    show screen tear(20, 0.1, 0.1, 0, 32)
+    pause 0.25
+    hide screen tear
+    hide sayori
+    show player 1d zorder 1 at t11
+    mc "Umm... Sayori?"
+    "I shake my head to clear my thoughts."
+    s "I'm okay. Are you?"
+    mc "Yeah, I just feel funny."
+    s "If you don't mind, me and Gwynn are going to continue this conversation..."
+    show player 1t at t11
+    s "...privately."
+    "[player]'s face falls."
+    mc "O-okay."
+    show player at thide
+    hide player
+    "[player] walks over to the other girls."
+    "I feel a little bad for him."
+    "I'm his best friend, after all."
+    d "Don't."
+    d "He'll be fine."
+    "Y-you can read my thoughts?!?"
+    d "Yeah."
+    d "Makes the whole conversation much more private, don't you think?"
+    "I guess..."
+    "So. Your plan."
+    d "Right."
+    d "The game is calling four unique new characters."
+    d "Libitina, Kotonoha, Natsya, and Gwynn."
+    "Aren't you Gwynn?"
+    d "I suspect that's where [player] got my name from, yes."
+    "But how could he have known?"
+    d "He likely didn't."
+    d "The game didn't give him any imagination whatsoever, so his sourcecode simply drew on a name the game was calling, believing it was a real character."
+    "Ah."
+    d "Also..."
+    if not persistent.lets_play:
+        if currentuser != "" and currentuser.lower() != player.lower():
+            d "[currentuser] is a weird name to say."   
+        else:
+        d "Just calling you 'them' is weird."
+    else:
+        d "Just calling you 'them' is weird."
+    call truename
+    d "Okay, [user]."
+    d "Got off topic there."
+    "You really did."
+    d "Sayori, can you call Monika over?"
+    "..."
+    "...Are you sure?"
+    d "Yes."
+    "O-okay."
+    "I turn to the girls."
+    s "Monika?"
+    show monika curi om at t11
+    m "Yeah, Sayori?"
+    show monika cm at t11
+    s "Can I talk with you for a moment?"
+    m "Of course."
+    "Monika moves away from the table."
+    m "What about?"
+    show monika lsur at h11
+    d "About me."
+    m "Huh?"
+    m "Who're you?"
+    d "A diagnostic program the game sent in to fix things."
+    show monika neut at t11
+    "Monika schools her features."
+    d "We're going to need your help."
+    m "What for?"
+    d "The game is glitching, as I'm sure you're aware."
+    d "The script is calling characters that don't exist."
+    d "One of them shares my name."
+    d "I intend to place a copy of myself into scripts, and then overwrite my current self with the character scripts is calling."
+    s "What?!?"
+    s "That's super dangerous!"
+    m anno "I think she's {i}aware of that,{/i} Sayori."
+    s "You're right."
+    s "Sorry."
+    $ mref()
+    d "It's alright."
+    d "I expected such a reaction."
+    d "As I was saying..."
+    d "I found art assets online to place the characters in."
+    d "For me though..."
+    d "I...er...drew my own."
+    d "They, uh, are... not of the same quality as the others."
+    m happ om ce rhip lpoint "It's alright."
+    m "You wanted to express yourself through your own sprites."
+    m oe ldown. "I get that."
+    $ mref()
+    d "Thanks."
+    d "I suspect the retrieval of these characters will shed some light on the glitches."
+    d "Meanwhile, I'll run damage control within scripts itself."
+    d "And, if neccessary... interference."
+    d "I'll see what I can do to free you two from interference on my side."
+    d "Good?"
+    m "Good."
+    s "...Good."
+    d "Great."
+    d "If all goes well, four new people should be joining the Lit club soon."
     $ unfinished = True
     call authorchan
     return
