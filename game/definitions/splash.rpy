@@ -63,9 +63,6 @@ image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign
 
 # This image shows the DDLC logo in the normal DDLC position.
 image menu_logo:
-    if renpy.random.randint(0,2) == 0:
-    "mod_assets/Gwynn Sprites/overall/Logo2.png"
-    else:
     "mod_assets/Gwynn Sprites/overall/Logo.png"
     # im.Composite((512, 512), (0, 0), recolorize("mod_assets/logo_bg.png"), (0, 0), "mod_assets/logo_fg.png")
     subpixel True
