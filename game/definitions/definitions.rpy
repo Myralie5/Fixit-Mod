@@ -107,14 +107,14 @@ init python:
                 except: open(config.basedir + "/characters/" + x + ".chr", "wb").write(renpy.file("chrs/" + x + ".chr").read())
 
     def restore_all_characters():
-        if persistent.playthrough == 0:
-            restore_character(["monika", "sayori", "natsuki", "yuri"])
-        elif persistent.playthrough == 1 or persistent.playthrough == 2:
-            restore_character(["monika", "natsuki", "yuri"])
-        elif persistent.playthrough == 3:
-            restore_character(["monika"])
-        else:
+        if persistent.monika_in == False:
             restore_character(["sayori", "natsuki", "yuri"])
+        elif persistent.monika_in == True and persistent.newchars == False:
+            restore_character(["monika", "natsuki", "yuri", "sayori"])
+        elif persistent.newchars == True:
+            restore_character(["monika", "natsuki", "yuri", "sayori", "kotonoha", "nastya", "gwynn", "libitina"])
+        else:
+            pass
     
     # This function is obsolete as all characters now restores only
     # relevant characters to the characters folder.
@@ -1575,9 +1575,10 @@ default persistent.first_load = None
 default persistent.first_poem = None
 default persistent.seen_colors_poem = None
 default persistent.monika_back = None
+default persistent.newchars = False
+
 default y_firstpoem = False
 default n_firstpoem = False
-
 default in_sayori_kill = None
 default in_yuri_kill = None
 default anticheat = 0

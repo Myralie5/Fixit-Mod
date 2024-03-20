@@ -1,4 +1,4 @@
-screen truename_input(message, ok_action, output_var="user", characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", len = 12):
+screen name_input(message, ok_action, output_var="user", characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", len = 12):
 
     ## Ensure other screens do not get input while this screen is displayed.
     modal True
@@ -592,7 +592,7 @@ label ch01_end:
     d "He likely didn't."
     d "The game didn't give him any imagination whatsoever, so his sourcecode simply drew on a name the game was calling, believing it was a real character."
     "Ah."
-    d "Also..."
+    d "That reminds me..."
     if not persistent.lets_play:
         if currentuser != "" and currentuser.lower() != player.lower():
             d "[currentuser] is a weird name to say."   
@@ -601,8 +601,10 @@ label ch01_end:
     else:
         d "Just calling you 'them' is weird."
     call truename
-    d "Okay, [user]."
-    d "Got off topic there."
+    d "Also, [user]..."
+    d "Not sure what it would help, but you can choose what pronouns for us to use."
+    call pronoun_screen
+    d "Sorry. Got off topic there."
     "You really did."
     d "Sayori, can you call Monika over?"
     "..."
@@ -611,7 +613,7 @@ label ch01_end:
     "O-okay."
     "I turn to the girls."
     s "Monika?"
-    show monika curi om at t11
+    show monika forward curi om at t11
     m "Yeah, Sayori?"
     show monika cm at t11
     s "Can I talk with you for a moment?"
@@ -658,8 +660,10 @@ label ch01_end:
     s "...Good."
     d "Great."
     d "If all goes well, four new people should be joining the Lit club soon."
-    $ unfinished = True
-    call authorchan
+    show monika at thide
+    hide monika
+#    $ unfinished = True
+#    call authorchan
     return
 
 label ch01_end_natsuki:
