@@ -54,7 +54,7 @@ layeredimage gwynn forward: #All definitions are for her facing forward.
             "mod_assets/MPT/gwynn/mouths/gwynn_md.png"
         attribute cm default if_any(["angr","flus"]):
             "mod_assets/MPT/gwynn/mouths/gwynn_md.png"
-        attribute cm default if_any(["yand","nerv]):
+        attribute cm default if_any(["yand","nerv"]):
             "mod_assets/MPT/gwynn/mouths/gwynn_mo.png"
         
         #Open Mouths:

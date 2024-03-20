@@ -1517,8 +1517,8 @@ define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suff
 define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define d = DynamicCharacter('d_name', image='gwynn' what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define l = DynamicCharacter('l_name', image='libitina' what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define d = DynamicCharacter('d_name', image='gwynn', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define l = DynamicCharacter('l_name', image='libitina', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 # This variable determines whether to allow the player to dismiss pauses.
 # By default this is set by config.developer which is normally set to false

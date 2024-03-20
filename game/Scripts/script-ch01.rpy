@@ -529,9 +529,9 @@ label ch01_end:
             "Who's [currentuser]?"
             d "And this definitely involves them."
         else:
-        s "You just need to talk to 'them', don't you?"
-        "Who's 'them'?"
-        d "Well, this definitely involves them."
+            s "You just need to talk to 'them', don't you?"
+            "Who's 'them'?"
+            d "Well, this definitely involves them."
     else:
         s "You just need to talk to 'them', don't you?"
         "Who's 'them'?"
@@ -555,7 +555,7 @@ label ch01_end:
     mc "You're talking like I'm not here."
     d "Oh. Sorry, [player]."
     d "Here..."
-    $ run_input(input="scene sayori_pov" output="Incorrect syntax")
+    $ run_input(input="scene sayori_pov", output="Incorrect syntax")
     d "Give it a second..."
     show screen tear(20, 0.1, 0.1, 0, 32)
     pause 0.25
@@ -597,7 +597,7 @@ label ch01_end:
         if currentuser != "" and currentuser.lower() != player.lower():
             d "[currentuser] is a weird name to say."   
         else:
-        d "Just calling you 'them' is weird."
+            d "Just calling you 'them' is weird."
     else:
         d "Just calling you 'them' is weird."
     call truename
@@ -646,7 +646,7 @@ label ch01_end:
     d "They, uh, are... not of the same quality as the others."
     m happ om ce rhip lpoint "It's alright."
     m "You wanted to express yourself through your own sprites."
-    m oe ldown. "I get that."
+    m oe ldown "I get that."
     $ mref()
     d "Thanks."
     d "I suspect the retrieval of these characters will shed some light on the glitches."
