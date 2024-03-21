@@ -20,7 +20,7 @@ layeredimage kotonoha toward:
         attribute neut default null #neutral
         attribute angr null #angry
         attribute curi null #curious
-        attribute daub null #daubtful
+        attribute doub null #doubtful
         attribute flus null #flustered
         attribute happ null #happy
         attribute laug null #laughing
@@ -38,10 +38,10 @@ layeredimage kotonoha toward:
             "mod_assets/MPT/kotonoha/eyes/e1a.png"
         attribute oe default if_any(["angr"]):
             "mod_assets/MPT/kotonoha/eyes/e1d.png"
-        attribute oe default if_any(["flus", "nerv", "daub", "sad", "worr"]):
+        attribute oe default if_any(["flus", "nerv", "doub", "sad", "worr"]):
             "mod_assets/MPT/kotonoha/eyes/e1c.png"
 
-        attribute ce if_any(["neut", "angr", "daub", "sad", "worr"]):
+        attribute ce if_any(["neut", "angr", "doub", "sad", "worr"]):
             "mod_assets/MPT/kotonoha/eyes/e2b.png"
         attribute ce if_any(["curi", "flus", "happ", "laug", "surp", "nerv"]):
             "mod_assets/MPT/kotonoha/eyes/e2a.png"
@@ -69,7 +69,7 @@ layeredimage kotonoha toward:
             "mod_assets/MPT/kotonoha/brows/b1a.png"
         attribute brow default if_any(["angr"]):
             "mod_assets/MPT/kotonoha/brows/b1c.png"
-        attribute brow default if_any(["curi", "daub"]):
+        attribute brow default if_any(["curi", "doub"]):
             "mod_assets/MPT/kotonoha/brows/b1e.png"
         attribute brow default if_any(["flus", "laug", "nerv", "sad", "worr"]):
             "mod_assets/MPT/kotonoha/brows/b1b.png"
@@ -89,7 +89,7 @@ layeredimage kotonoha toward:
 
     group mouths:
 
-        attribute cm default if_any(["neut", "angr", "flus", "daub", "sad", "worr"]):
+        attribute cm default if_any(["neut", "angr", "flus", "doub", "sad", "worr"]):
             "mod_assets/MPT/kotonoha/mouths/me.png"
         attribute cm default if_any(["curi", "surp"]):
             "mod_assets/MPT/kotonoha/mouths/mf.png"
@@ -100,7 +100,7 @@ layeredimage kotonoha toward:
             "mod_assets/MPT/kotonoha/mouths/mf.png"
         attribute om if_any(["angr", "sad"]):
             "mod_assets/MPT/kotonoha/mouths/mg.png"
-        attribute om if_any(["curi", "flus", "surp", "daub"]):
+        attribute om if_any(["curi", "flus", "surp", "doub"]):
             "mod_assets/MPT/kotonoha/mouths/mb.png"
         attribute om if_any(["happ"]):
             "mod_assets/MPT/kotonoha/mouths/md.png"
@@ -124,7 +124,7 @@ layeredimage kotonoha toward:
 
     group noses:
 
-        attribute nose default if_any(["neut", "angr", "curi", "daub", "flus", "happ", "laug", "surp", "sad"]):
+        attribute nose default if_any(["neut", "angr", "curi", "doub", "flus", "happ", "laug", "surp", "sad"]):
             "mod_assets/MPT/kotonoha/noses/n1.png"
         attribute nose default if_any(["worr"]):
             "mod_assets/MPT/kotonoha/noses/n2.png"

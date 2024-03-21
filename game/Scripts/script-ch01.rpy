@@ -622,13 +622,13 @@ label ch01_end:
     m "What about?"
     show monika lsur at h11
     d "About me."
-    m "Huh?"
+    m om "Huh?"
     m "Who're you?"
     d "A diagnostic program the game sent in to fix things."
-    show monika neut at t11
+    show monika neut cm at t11
     "Monika schools her features."
     d "We're going to need your help."
-    m "What for?"
+    m om "What for?"
     d "The game is glitching, as I'm sure you're aware."
     d "The script is calling characters that don't exist."
     d "One of them shares my name."
