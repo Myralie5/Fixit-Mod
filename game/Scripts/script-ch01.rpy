@@ -601,9 +601,9 @@ label ch01_end:
     else:
         d "Just calling you 'them' is weird."
     call truename
-    d "Also, [user]..."
-    d "Not sure what it would help, but you can choose what pronouns for us to use."
-    call pronoun_screen
+    # d "Also, [user]..."
+    # d "Not sure what it would help, but you can choose what pronouns for us to use."
+    # call pronoun_screen
     d "Sorry. Got off topic there."
     "You really did."
     d "Sayori, can you call Monika over?"

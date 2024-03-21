@@ -31,11 +31,11 @@ label ch02_main:
     with wipeleft_scene
     pause 0.5
     show bg bedroom
+    with wipeleft_scene
     "Should I write a poem again tonight?"
     "Sayo didn't say if it was just once or continuing..."
     "Maybe I should call her."
     menu:
-        ""
         "Call her.":
             call ch02_call_sayo
         "Just write one.":
