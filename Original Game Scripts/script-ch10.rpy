@@ -1,4 +1,4 @@
-label ch10_main:
+label ch10_old:
     $ delete_all_saves()
     $ persistent.deleted_saves = True
     $ gtext = glitchtext(48)

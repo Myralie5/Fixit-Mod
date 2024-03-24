@@ -3,6 +3,13 @@
 # This is the main script that Ren'Py calls upon to start
 # your mod's story! 
 
+#Notable calls (use as 'call <the command>')
+#   -poemresponse_start: poem sharing minigame
+#   -poem: poem minigame
+
+#Notable variables (use as '$ <the variable>= <value>' to set, 'if <the variable> == <value>' to check)
+
+
 label start:
 
     # This label configures the anticheat number for the game after Act 1.
@@ -27,6 +34,9 @@ label start:
     $ n_name = "Girl 1"
     $ y_name = "Girl 2"
     $ d_name = "Girl's Voice"
+    $ n_name = "Girl 1"
+    $ k_name = "Girl 2"
+    $ l_name = "Girl 3"
 
     # This variable controls whether the quick menu in the textbox is enabled.
     $ quick_menu = True
@@ -49,23 +59,23 @@ label start:
 
     ## Example on calling scripts from DDLC.
     if persistent.playthrough == 0:
-    #     # This variable sets the chapter number to X depending on the chapter
-    #     # your player is experiencing ATM.
         $ chapter = 0
 
-    #     # This call statement calls your script label to be played.
         call ch0_main
-        
-    #     # This call statement calls the poem mini-game to be played.
+
         call poem
 
     #     ## Day 1
         $ chapter = 1
         call ch01_main
 
-    #     # This call statement calls the poem sharing minigame to be played.
         call poemresponse_start
+
         call ch01_end
+
+        call poem
+
+        $ d_name = "Girl 4"
 
     #     ## Day 2
         $ chapter = 2
@@ -100,14 +110,28 @@ label start:
 
     #   ## Day 4 - Act 2
         $ chapter = 10
-        call ch010_main
+        call ch10_main
  
         call ch11_main
 
     #    ## Day 1 - Act 4
         $ chapter = 0
         call ch12_main
-        jump credits
+        jump modcredits
+
+
+label modcredits:
+    pause 1.0
+    if unfinished == True:
+        call authorchan
+    else:
+        scene black
+        show end
+        with dissolve_scene_full
+        pause 1.0
+        python:
+            renpy.call_screen("dialog", message="That's it for the playtest, folks.", ok_action=Function(renpy.full_restart))    
+
 
 # This label is where the game 'ends' during Act 1.
 #label endgame(pause_length=4.0):

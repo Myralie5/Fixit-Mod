@@ -1,3 +1,2 @@
-label ch6_main:
-  
-   
+label ch06_main:
+    return

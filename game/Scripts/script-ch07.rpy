@@ -1,2 +1,2 @@
-label ch7_main:
-   
+label ch07_main:
+    return

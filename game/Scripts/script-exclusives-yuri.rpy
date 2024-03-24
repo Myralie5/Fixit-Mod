@@ -238,7 +238,7 @@ label yuri_exclusivex_2:
     y "I was kind of just waiting for you..."
     show yuri 2a
     mc "Ah, if that's the case..."
-label yuri_exclusive_2_ch3:
+label yuri_exclusivex_2_ch3:
     mc "Why don't we go ahead and get started?"
     y 2c "Yes, let's!"
     y 3a "Actually, I have a request..."

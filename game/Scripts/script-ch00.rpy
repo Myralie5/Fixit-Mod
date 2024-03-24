@@ -111,7 +111,7 @@ label ch0_main:
     "Natsuki and Yuri wince, and then seem to wonder why they did."
     "I get this strange sense of deja vu, like someone else said that once... someone I didn't like."
     d "Oh my. First time and she already slipped up."
-    show sayori zorder 2 at f32
+    show sayori flus ml awkw zorder 2 at f32
     s "I-I mean, alright everyone!"
     play music t3
     show yuri dist om ce zorder 1 at t33

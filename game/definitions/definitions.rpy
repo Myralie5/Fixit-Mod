@@ -1599,6 +1599,10 @@ default m_name = "Monika"
 default n_name = "Natsuki"
 default y_name = "Yuri"
 default d_name = "Gwynn"
+default a_name = "Nastya"
+default l_name = "Libitina"
+default k_name = "Kotonoha"
+
 
 # Poem Variables
 # This section records how much each character likes your poem in-game.

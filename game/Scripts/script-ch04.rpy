@@ -1,2 +1,2 @@
-label ch4_main:
-    
+label ch04_main:
+    return

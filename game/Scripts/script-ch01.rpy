@@ -1,35 +1,3 @@
-screen name_input(message, ok_action, output_var="user", characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", len = 12):
-
-    ## Ensure other screens do not get input while this screen is displayed.
-    modal True
-
-    zorder 200
-
-    style_prefix "confirm"
-
-    add "gui/overlay/confirm.png"
-    key "K_RETURN" action [Play("sound", gui.activate_sound), ok_action]
-
-    frame:
-
-        vbox:
-            xalign .5
-            yalign .5
-            spacing 30
-
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
-            
-            # This is the line we change to use our new variables.
-            input default "" value VariableInputValue(output_var) length len allow characters
-
-            hbox:
-                xalign 0.5
-                spacing 100
-
-                textbutton _("OK") action ok_action
-
 label truename:
     $ user =''
     $ renpy.call_screen("name_input", "What should we call you?", ok_action=Jump("process_truename"), output_var="user")
@@ -101,12 +69,11 @@ label ch01_main:
     mc "How do you know my name?"
     stop music
     $ timeleft = 12.453 - get_pos()
-    show noise zorder 3 at noisefade(25 + timeleft)
-    show vignette as flicker zorder 4 at vignetteflicker(timeleft)
-    show vignette zorder 4 at vignettefade(timeleft)
-    show layer master at layerflicker(timeleft)
+    show vignette zorder 4
+        alpha 0.5
     m 5b "Don't worry about it."
     m "We were going to the Literature Club, remember?"
+    hide vignette
 
     scene bg club_day
     with wipeleft_scene
@@ -661,7 +628,32 @@ label ch01_end:
     d "Great."
     d "If all goes well, four new people should be joining the Lit club soon."
     show monika at thide
-    hide monika
+    hide monika    
+    $ run_input(input="scene mc_pov", output="Incorrect syntax")
+    hide screen console_screen
+    show bg closet
+    with dissolve_scene_full
+    show natsuki cross anno at t21
+    show yuri turned pout om at f22
+    y "...and he was {i}up in my face{/i} the whole time."
+    show yuri cm at t22
+    mc "Sounds like one heck of a jerk."
+    show yuri anno om ce at f22
+    y "He so was."
+    show yuri cm at t22
+    "The process of getting Yuri to open up was long and hard, but the results are worth it."
+    "But before anything else can happen, I hear Sayo call out."
+    s "Sorry to burst the bubble over there, but we have to leave the room soon!"
+    show yuri dist om at f22
+    show natsuki flus at t21
+    y "Shame. We were having so much fun..."
+    show yuri at thide
+    hide yuri
+    show natsuki at thide
+    hide natsuki
+    show bg club_day
+    with wipeleft_scene
+    "I wave goodbye and grab my stuff to head home."
 #    $ unfinished = True
 #    call authorchan
     return
